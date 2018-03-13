@@ -1,0 +1,40 @@
+
+.posts-preview
+    // background-color: #ccc
+    // padding: 50px 0
+    .post
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+        background-color: #fff
+        margin: 45px auto
+        padding: 35px
+        position: relative
+        display: grid
+        +sm
+            width: 80%
+        +md
+            width: 60%
+        +lg
+            width: 65%
+            grid-template-columns: 1fr 2fr
+
+        .thumbnail
+            // width: 220px
+
+            +lg
+                width: 220px
+
+            img
+                +vertical-align
+                width: 100%
+                height: 100%
+        .details
+            line-height: 20px
+            padding-left: 20px
+            .vertical-align
+                +vertical-align
+
+            .title
+                font-size: 20px
+                // font-weight: normal
+                margin: 0 0 10px
+                line-height: 25px

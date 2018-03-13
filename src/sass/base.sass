@@ -1,0 +1,92 @@
+// $logo-font:  'Merienda'
+// $logo-font:  'Marck Script'
+// $logo-font:  'Cookie'
+$logo-font:  'Kaushan Script'
+$font: 'Raleway'
+$hover-text-color: #d6215e
+$active-text-color: #d6215e
+$brand-text-color: #E91E63
+$accent-text-color: #525252
+
+// #a08f68 , khaki , #dab23c , #eaba2c
+// #7f51ec
+// #E91E63
+
+
+$xs: "(max-width: 576px)"
+$sm: "(min-width: 577px)"
+$md: "(min-width: 768px)"
+$lg: "(min-width: 992px)"
+
+=xs
+    @media #{$xs}
+        @content
+
+=sm
+    @media #{$sm}
+        @content
+
+=md
+    @media #{$md}
+        @content
+
+=lg
+    @media #{$lg}
+        @content
+
+*
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+
+body
+    margin: 0
+    font-size: 14px
+    font-family: $font
+    background-color: #eee
+
+a
+    color: inherit
+    text-decoration: none
+    &:hover
+        color: $hover-text-color
+
+p
+    line-height: 25px
+    color: #404040
+
+h1
+    font-size: 40px
+    font-weight: 200
+    color: $accent-text-color
+
+h2 , h3 , h4 , h5 , h6
+    color: $accent-text-color
+
+ul , ol
+    line-height: 30px
+
+
+
+.container
+    padding-right: 15px
+    padding-left: 15px
+    margin-right: auto
+    margin-left: auto
+
+
+
+@media  #{$md}
+    .container
+        width: 800px
+
+
+@media #{$lg}
+    .container
+        width: 990px
+
+
+@media (min-width: 1200px)
+    .container
+        width: 1075px

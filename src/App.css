@@ -1,0 +1,252 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: "Raleway";
+  background-color: #eee; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+  a:hover {
+    color: #d6215e; }
+
+p {
+  line-height: 25px;
+  color: #404040; }
+
+h1 {
+  font-size: 40px;
+  font-weight: 200;
+  color: #525252; }
+
+h2, h3, h4, h5, h6 {
+  color: #525252; }
+
+ul, ol {
+  line-height: 30px; }
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+@media (min-width: 768px) {
+  .container {
+    width: 800px; } }
+@media (min-width: 992px) {
+  .container {
+    width: 990px; } }
+@media (min-width: 1200px) {
+  .container {
+    width: 1075px; } }
+header {
+  padding: 10px 0;
+  background-color: #fff;
+  color: #999; }
+  header .container {
+    display: grid;
+    grid-template-columns: 20% 60% 20%; }
+    @media (min-width: 768px) {
+      header .container {
+        padding: 0; } }
+  header .search {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    border: 1px solid #dbdbdb; }
+    header .search i {
+      padding: 8px 15px;
+      border-right: 1px solid #dbdbdb; }
+    header .search input {
+      outline: none;
+      padding: 5px 10px;
+      border: none;
+      font-size: 15px; }
+  header nav {
+    text-align: center; }
+    header nav a {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      display: none;
+      text-decoration: none;
+      font-size: 15px;
+      text-transform: capitalize; }
+      @media (min-width: 768px) {
+        header nav a {
+          display: inline-block;
+          margin: 0 0 0 75px; }
+          header nav a:hover {
+            color: #d6215e; } }
+    header nav .active {
+      display: inline-block;
+      color: #d6215e; }
+    header nav .toggle-menu {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      font-size: 20px;
+      margin-left: 5px;
+      background: none;
+      border: none;
+      vertical-align: top; }
+      @media (min-width: 768px) {
+        header nav .toggle-menu {
+          display: none; } }
+  header .social-media {
+    text-align: right; }
+    header .social-media a {
+      margin: 0 0 0 30px;
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      display: inline-block; }
+    header .social-media i {
+      font-size: 15px; }
+
+.latest-posts {
+  padding: 0 0 40px 0; }
+  .latest-posts .post {
+    margin: 20px auto;
+    padding: 10px 10px 0; }
+    .latest-posts .post:nth-of-type(1) {
+      padding-left: 0; }
+    .latest-posts .post:nth-last-of-type(1) {
+      padding-right: 0; }
+    @media (max-width: 576px) {
+      .latest-posts .post {
+        max-width: 350px; } }
+    .latest-posts .post .post-wrapper {
+      height: 100%;
+      font-size: 12px;
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+      background-color: #fff; }
+      .latest-posts .post .post-wrapper .thumbnail {
+        width: 100%;
+        height: 200px; }
+        .latest-posts .post .post-wrapper .thumbnail img {
+          width: 100%;
+          height: 100%; }
+      .latest-posts .post .post-wrapper .details {
+        margin: 25px; }
+        .latest-posts .post .post-wrapper .details .title {
+          text-transform: capitalize;
+          font-size: 16px;
+          text-align: center;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          line-height: 25px; }
+        .latest-posts .post .post-wrapper .details .excerpt {
+          color: #777;
+          font-size: 14px;
+          line-height: 20px; }
+
+.single-post {
+  background-color: #fff;
+  padding: 50px; }
+  @media (min-width: 992px) {
+    .single-post.container {
+      width: 800px; } }
+  .single-post p {
+    line-height: 29px;
+    font-size: 17px; }
+
+footer {
+  padding: 30px 0;
+  background-color: #fff;
+  color: #585858;
+  text-align: center;
+  margin-top: 65px; }
+  footer p {
+    margin: 0; }
+
+.logo-wrapper {
+  text-align: center;
+  margin: 65px auto;
+  width: 40%;
+  text-transform: capitalize; }
+  .logo-wrapper .logo {
+    font-size: 55px;
+    font-family: "Kaushan Script";
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    color: #E91E63; }
+  .logo-wrapper .slogan-wrapper .horizontal-line {
+    display: inline-block;
+    border: 1px solid #444;
+    width: 55px;
+    height: 0; }
+  .logo-wrapper .slogan-wrapper .slogan {
+    display: inline-block;
+    font-size: 20px;
+    padding: 0 5px;
+    margin: 0;
+    vertical-align: middle;
+    color: #333; }
+
+.posts-container {
+  display: grid; }
+  @media (min-width: 577px) {
+    .posts-container {
+      grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 768px) {
+    .posts-container {
+      grid-template-columns: repeat(3, 1fr); } }
+  @media (min-width: 992px) {
+    .posts-container {
+      grid-template-columns: repeat(4, 1fr); } }
+
+.posts-preview .post {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  background-color: #fff;
+  margin: 45px auto;
+  padding: 35px;
+  position: relative;
+  display: grid; }
+  @media (min-width: 577px) {
+    .posts-preview .post {
+      width: 80%; } }
+  @media (min-width: 768px) {
+    .posts-preview .post {
+      width: 60%; } }
+  @media (min-width: 992px) {
+    .posts-preview .post {
+      width: 65%;
+      grid-template-columns: 1fr 2fr; } }
+  @media (min-width: 992px) {
+    .posts-preview .post .thumbnail {
+      width: 220px; } }
+  .posts-preview .post .thumbnail img {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%; }
+  .posts-preview .post .details {
+    line-height: 20px;
+    padding-left: 20px; }
+    .posts-preview .post .details .vertical-align {
+      position: relative;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+    .posts-preview .post .details .title {
+      font-size: 20px;
+      margin: 0 0 10px;
+      line-height: 25px; }
+
+/*# sourceMappingURL=app.css.map */
