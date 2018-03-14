@@ -4,30 +4,50 @@ header
     background-color: #fff
     color: #999
     .container
-        display: grid
-        grid-template-columns: 20% 60% 20%
+
         +md
             padding: 0
 
     .search
-        display: grid
-        grid-template-columns: 20% 80%
+        display: inline-block
         border: 1px solid #dbdbdb
-        // background-color: #fafafa
+        position: relative
+        +xs
+            border: none
+            width: 40%
+        +sm
+            width: 30%
+        +md
+            width: 200px
+
         i
+            max-width: 45px
             padding: 8px 15px
             border-right: 1px solid #dbdbdb
+            +xs
+                border: none
+                padding-left: 0
+
         input
+            width: calc(100% - 50px)
             outline: none
             padding: 5px 10px
             border: none
             font-size: 15px
+            +xs
+                display: none
 
 
     nav
+        display: inline-block
         text-align: center
+        +xs
+            width: 60%
+            text-align: right
+        +sm
+            width: 40%
+
         a
-            +vertical-align
             display: none
             text-decoration: none
             font-size: 15px
@@ -42,9 +62,17 @@ header
             display: inline-block
             color: $active-text-color
 
-        .toggle-menu
-            +vertical-align
+        .menu-link
+            +md
+                display: none
+            .active
+                +xs
+                    display: inline-block
+                +sm
+                    display: inline-block
 
+
+        .toggle-menu
             font-size: 20px
             margin-left: 5px
             background: none
@@ -54,10 +82,16 @@ header
                 display: none
 
     .social-media
+        display: inline-block
         text-align: right
+        +xs
+            display: none
+        +sm
+            display: inline-block
+            width: 30%
         a
             margin: 0 0 0 30px
-            +vertical-align
             display: inline-block
+
         i
             font-size: 15px

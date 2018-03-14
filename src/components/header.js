@@ -6,6 +6,17 @@ function onSearchFormSubmit(value){
     console.log(value)
 }
 
+function handleNavClick(e) {
+    // if isActive then showMenu()
+    // else then go to route
+}
+
+function showMenu(e) {
+    e.preventDefault();
+    // show menu
+}
+
+
 const Header = () => {
     return (
         <header>
@@ -14,8 +25,9 @@ const Header = () => {
                 <SearchForm onSubmit={onSearchFormSubmit} />
 
                 <nav>
-                    <NavLink exact activeClassName="active" to="/">home</NavLink>
-                    <NavLink activeClassName="active" to="/about">about</NavLink>
+                    <NavLink exact activeClassName="active" to="/" onClick={handleNavClick}>home</NavLink>
+                    <NavLink activeClassName="active" to="/about" onClick={handleNavClick}>about</NavLink>
+                    <NavLink activeClassName="active" to="/post/:id" onClick={showMenu} className="menu-link">Menu</NavLink>
                     <i className="toggle-menu fas fa-angle-down"></i>
                 </nav>
 

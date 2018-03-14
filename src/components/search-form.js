@@ -4,12 +4,12 @@ import { Field, reduxForm } from 'redux-form'
 let SearchForm = props => {
   const { handleSubmit } = props
   return (
-      <form onSubmit={handleSubmit}>
-          <div className="search">
+      <div className="search">
+          <form onSubmit={handleSubmit}>
               <i className="fas fa-search"></i>
               <Field name="search" component="input" type="text" placeholder="search" />
-          </div>
-      </form>
+          </form>
+      </div>
   )
 }
 
