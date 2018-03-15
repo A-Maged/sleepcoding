@@ -240,6 +240,9 @@ footer {
   padding: 35px;
   position: relative;
   display: grid; }
+  @media (max-width: 576px) {
+    .posts-preview .post {
+      box-shadow: none; } }
   @media (min-width: 577px) {
     .posts-preview .post {
       width: 80%; } }
