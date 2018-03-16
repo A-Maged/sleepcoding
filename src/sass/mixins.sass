@@ -1,3 +1,25 @@
+$xs: "(max-width: 576px)"
+$sm: "(min-width: 577px)"
+$md: "(min-width: 768px)"
+$lg: "(min-width: 992px)"
+
+=xs
+    @media #{$xs}
+        @content
+
+=sm
+    @media #{$sm}
+        @content
+
+=md
+    @media #{$md}
+        @content
+
+=lg
+    @media #{$lg}
+        @content
+
+
 =vertical-align
     position: relative
     top: 50%

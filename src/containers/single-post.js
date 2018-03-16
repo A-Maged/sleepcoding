@@ -12,6 +12,8 @@ import postReducer from '../redux/reducers/postReducer'
 class SinglePost extends Component {
     componentDidMount(){
         this.fetchPost()
+
+        // needed for mobile devices
         window.scrollTo(0, 0);
     }
 
