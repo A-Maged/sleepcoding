@@ -30,6 +30,13 @@ h2, h3, h4, h5, h6 {
 ul, ol {
   line-height: 30px; }
 
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
 .container {
   padding-right: 15px;
   padding-left: 15px;
@@ -242,7 +249,9 @@ footer {
   display: grid; }
   @media (max-width: 576px) {
     .posts-preview .post {
-      box-shadow: none; } }
+      box-shadow: none;
+      width: 90%;
+      padding: 25px 25px; } }
   @media (min-width: 577px) {
     .posts-preview .post {
       width: 80%; } }
@@ -257,22 +266,11 @@ footer {
     .posts-preview .post .thumbnail {
       width: 220px; } }
   .posts-preview .post .thumbnail img {
-    position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
     width: 100%;
     height: 100%; }
   .posts-preview .post .details {
     line-height: 20px;
     padding-left: 20px; }
-    .posts-preview .post .details .vertical-align {
-      position: relative;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%); }
     .posts-preview .post .details .title {
       font-size: 20px;
       margin: 0 0 10px;

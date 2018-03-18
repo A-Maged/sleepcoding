@@ -11,6 +11,9 @@
         display: grid
         +xs
             box-shadow: none
+            width: 90%
+            padding: 25px 25px
+
         +sm
             width: 80%
         +md
@@ -21,19 +24,17 @@
 
         .thumbnail
             // width: 220px
-
             +lg
                 width: 220px
 
             img
-                +vertical-align
+                // +vertical-align
                 width: 100%
                 height: 100%
+
         .details
             line-height: 20px
             padding-left: 20px
-            .vertical-align
-                +vertical-align
 
             .title
                 font-size: 20px
