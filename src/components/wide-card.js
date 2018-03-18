@@ -12,7 +12,7 @@ const WideCard = (props) => {
             <div className="details">
                 <div className="vertical-align">
                     <h4 className="title">
-                        <Link to={"/post/" + props.id}>{props.title}</Link>
+                        <Link to={"/post/" + props.slug}>{props.title}</Link>
                     </h4>
                     <p className="excerpt">
                          {props.excerpt}

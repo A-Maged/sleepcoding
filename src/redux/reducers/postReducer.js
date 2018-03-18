@@ -1,10 +1,11 @@
 import {
-    Current_Post, 
+    Current_Post,
     All_Posts
 } from '../actions'
 
 let initStat = {
-    currentPost: {},
+    // currentPost: {},
+    currentPost: '',
     allPosts: []
 }
 

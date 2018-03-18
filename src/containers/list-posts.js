@@ -20,10 +20,17 @@ class ListPosts extends Component {
     }
 
     fetchPosts(){
-        axios.get('https://jsonplaceholder.typicode.com/posts/')
+        // axios.get('https://jsonplaceholder.typicode.com/posts/')
+        // .then(function (response) {
+        //     store.dispatch( allPostsAction(response.data) )
+        // })
+
+        axios.get('https://raw.githubusercontent.com/A-Maged/sleepcoding-blog/gh-pages/posts/index.json')
+        // axios.get('/posts/index.json')
         .then(function (response) {
             store.dispatch( allPostsAction(response.data) )
         })
+
     }
 
     render() {
@@ -33,10 +40,10 @@ class ListPosts extends Component {
                 { this.props.allPosts.map((post)=>{
                     return(
                         <WideCard   key={shortid.generate()}
-                                    imgUrl="assets/imgs/4.jpg"
+                                    imgUrl={post.imgUrl}
                                     title={post.title}
-                                    id={post.id}
-                                    excerpt="seems as if multiple keys point to the same binding within Laravel's service container. How exactly does this work? Let's once again peel back the curtain, and figure this out Based on our learning from the previous episode, it seems as if multiple keys point to the same binding within Laravel's service container..."
+                                    slug={post.slug}
+                                    excerpt={post.excerpt}
                         />
                     )
                 }) }

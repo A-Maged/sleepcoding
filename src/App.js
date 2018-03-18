@@ -36,7 +36,7 @@ class App extends Component {
                     <Logo />
 
                     <Route exact path="/" component={Home} />
-                    <Route path="/post/:id" component={Post} />
+                    <Route path="/post/:slug" component={Post} />
 
                     <Footer />
                 </div>

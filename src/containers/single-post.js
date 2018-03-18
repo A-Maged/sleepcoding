@@ -9,6 +9,8 @@ import {currentPostAction} from '../redux/actions'
 import postReducer from '../redux/reducers/postReducer'
 
 
+
+
 class SinglePost extends Component {
     componentDidMount(){
         this.fetchPost()
@@ -18,18 +20,22 @@ class SinglePost extends Component {
     }
 
     fetchPost(){
-        axios.get(`https://jsonplaceholder.typicode.com/posts/${this.props.postid}`)
+        // axios.get(`https://jsonplaceholder.typicode.com/posts/${this.props.postid}`)
+        //   .then(function (response) {
+        //       store.dispatch( currentPostAction(response.data) )
+        //   })
+
+        axios.get(`https://raw.githubusercontent.com/A-Maged/sleepcoding-blog/gh-pages/posts/${this.props.postSlug}.html`)
+        // axios.get(`/posts/${this.props.postSlug}.html`)
           .then(function (response) {
               store.dispatch( currentPostAction(response.data) )
           })
+
     }
 
     render() {
         return (
-            <div>
-                <h2>{ this.props.currentPost.title }</h2>
-                <p>{ this.props.currentPost.body }</p>
-            </div>
+            <div dangerouslySetInnerHTML={{__html: this.props.currentPost}} />
         );
     }
 
