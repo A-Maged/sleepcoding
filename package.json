@@ -1,5 +1,6 @@
 {
   "name": "sleepcoding",
+  "homepage": "https://a-maged.github.io/sleepcoding-blog/build",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
