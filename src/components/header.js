@@ -1,6 +1,8 @@
 import React from 'react'
 import { NavLink, Link } from "react-router-dom"
 
+import store from '../redux/store'
+
 function handleNavClick(e) {
     // if isActive then showMenu()
     // else then go to route
@@ -15,14 +17,14 @@ function showMenu(e) {
 const Header = () => {
     return (
         <header>
-            <div className="container">
+            <div className="container clearfix">
 
-                <nav>
+                <nav className="show-menu">
                     <NavLink exact activeClassName="active" to="/" onClick={handleNavClick}>home</NavLink>
                     <NavLink activeClassName="active" to="/blog" onClick={handleNavClick}>blog</NavLink>
                     <NavLink activeClassName="active" to="/about" onClick={handleNavClick}>about</NavLink>
                     <NavLink activeClassName="active" to="/post/:id" onClick={showMenu} className="menu-link">Menu</NavLink>
-                    <i className="toggle-menu fas fa-angle-down"></i>
+                    <i className="toggle-menu-icon fas fa-angle-down"></i>
                 </nav>
 
                 <div className="social-media">

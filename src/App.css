@@ -49,7 +49,7 @@ ul, ol {
   margin-left: auto; }
   @media (max-width: 576px) {
     .container {
-      padding: 15px; } }
+      padding: 1em; } }
   @media (min-width: 577px) {
     .container {
       padding: 20px; } }
@@ -57,12 +57,15 @@ ul, ol {
     .container {
       padding: 50px; } }
 
+.clearfix::after {
+  content: " ";
+  clear: both;
+  display: table; }
+
 header {
-  padding: 15px 0;
   background-color: #fff;
-  color: #999; }
-  header .container {
-    padding: 0; }
+  color: #999;
+  position: relative; }
   header nav {
     display: inline-block; }
     @media (min-width: 577px) {
@@ -95,15 +98,25 @@ header {
     @media (min-width: 577px) {
       header nav .menu-link .active {
         display: inline-block; } }
-    header nav .toggle-menu {
+    header nav .toggle-menu-icon {
       font-size: 20px;
       margin-left: 5px;
       background: none;
       border: none;
       vertical-align: top; }
       @media (min-width: 768px) {
-        header nav .toggle-menu {
+        header nav .toggle-menu-icon {
           display: none; } }
+    header nav.show-menu {
+      position: absolute;
+      left: 1.5em;
+      background-color: #fff;
+      padding: 0 10px 10px; }
+      header nav.show-menu a {
+        display: block;
+        padding: 15px; }
+        header nav.show-menu a:first-of-type {
+          padding-top: 0; }
   header .social-media {
     float: right;
     display: inline-block; }
@@ -163,7 +176,7 @@ header {
   background-color: #fff; }
   @media (max-width: 576px) {
     .about {
-      padding: 15px; } }
+      padding: 1em; } }
   @media (min-width: 577px) {
     .about {
       padding: 20px; } }
