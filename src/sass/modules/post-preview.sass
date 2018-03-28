@@ -3,7 +3,7 @@
     // background-color: #ccc
     // padding: 50px 0
     .post
-        max-width: 650px
+        max-width: 750px
         width: 85%
         margin: 45px auto
         padding: 35px
@@ -17,14 +17,15 @@
         +sm
             box-shadow: none
             padding: 25px 25px
-            
-        +lg
+        +md
             grid-template-columns: 1fr 2fr
 
         .thumbnail
-            // width: 220px
-            +lg
+            +md
                 width: 220px
+
+            // +lg
+                // width: 220px
 
             img
                 // +vertical-align
@@ -33,11 +34,10 @@
 
         .details
             line-height: 20px
-            +lg
+            +md
                 padding-left: 20px
 
             .title
                 font-size: 20px
-                // font-weight: normal
                 margin: 0 0 10px
                 line-height: 25px

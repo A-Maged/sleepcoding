@@ -20,9 +20,12 @@ p {
   color: #404040; }
 
 h1 {
-  font-size: 40px;
+  font-size: 2.8em;
   font-weight: 200;
   color: #525252; }
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 2.5em; } }
 
 h2, h3, h4, h5, h6 {
   color: #525252; }
@@ -145,9 +148,12 @@ header {
 .single-post {
   background-color: #fff;
   padding: 50px; }
-  @media (min-width: 992px) {
-    .single-post.container {
-      width: 800px; } }
+  @media (max-width: 576px) {
+    .single-post {
+      padding: 15px; } }
+  @media (min-width: 577px) {
+    .single-post {
+      padding: 20px; } }
   .single-post p {
     line-height: 29px;
     font-size: 17px; }
@@ -203,7 +209,7 @@ footer {
       grid-template-columns: repeat(4, 1fr); } }
 
 .posts-preview .post {
-  max-width: 650px;
+  max-width: 750px;
   width: 85%;
   margin: 45px auto;
   padding: 35px;
@@ -219,10 +225,10 @@ footer {
     .posts-preview .post {
       box-shadow: none;
       padding: 25px 25px; } }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     .posts-preview .post {
       grid-template-columns: 1fr 2fr; } }
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     .posts-preview .post .thumbnail {
       width: 220px; } }
   .posts-preview .post .thumbnail img {
@@ -230,7 +236,7 @@ footer {
     height: 100%; }
   .posts-preview .post .details {
     line-height: 20px; }
-    @media (min-width: 992px) {
+    @media (min-width: 768px) {
       .posts-preview .post .details {
         padding-left: 20px; } }
     .posts-preview .post .details .title {
