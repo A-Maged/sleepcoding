@@ -9,6 +9,7 @@ import store from './redux/store';
 import Header from './components/header';
 import Logo from './components/logo';
 import Home from './pages/home';
+import About from './pages/about';
 import Post from './pages/post';
 import Footer from './components/footer';
 
@@ -36,6 +37,7 @@ class App extends Component {
                     <Logo />
 
                     <Route exact path="/" component={Home} />
+                    <Route path="/about" component={About} />
                     <Route path="/post/:slug" component={Post} />
 
                     <Footer />

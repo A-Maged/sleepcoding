@@ -25,7 +25,7 @@ h1 {
   color: #525252; }
   @media (max-width: 576px) {
     h1 {
-      font-size: 2.5em; } }
+      font-size: 2.4em; } }
 
 h2, h3, h4, h5, h6 {
   color: #525252; }
@@ -47,14 +47,22 @@ ul, ol {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
+  @media (max-width: 576px) {
+    .container {
+      padding: 15px; } }
+  @media (min-width: 577px) {
+    .container {
+      padding: 20px; } }
+  @media (min-width: 768px) {
+    .container {
+      padding: 50px; } }
 
 header {
   padding: 15px 0;
   background-color: #fff;
   color: #999; }
-  @media (min-width: 768px) {
-    header .container {
-      padding: 0; } }
+  header .container {
+    padding: 0; }
   header nav {
     display: inline-block; }
     @media (min-width: 577px) {
@@ -146,17 +154,22 @@ header {
           line-height: 20px; }
 
 .single-post {
-  background-color: #fff;
-  padding: 50px; }
-  @media (max-width: 576px) {
-    .single-post {
-      padding: 15px; } }
-  @media (min-width: 577px) {
-    .single-post {
-      padding: 20px; } }
+  background-color: #fff; }
   .single-post p {
     line-height: 29px;
     font-size: 17px; }
+
+.about {
+  background-color: #fff; }
+  @media (max-width: 576px) {
+    .about {
+      padding: 15px; } }
+  @media (min-width: 577px) {
+    .about {
+      padding: 20px; } }
+  @media (min-width: 768px) {
+    .about {
+      padding: 50px; } }
 
 footer {
   padding: 10px 0;
