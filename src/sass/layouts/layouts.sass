@@ -3,17 +3,21 @@
 @import "popular-posts"
 @import "single-post"
 @import "footer"
+
 .logo-wrapper
     text-align: center
     margin: 65px auto
-    width: 40%
+    max-width: 500px
+    width: 90%
     text-transform: capitalize
     .logo
-        font-size: 55px
+        font-size: 4em
         font-family: $logo-font
         font-weight: 700
         margin: 0 0 30px 0
         color: $brand-text-color
+        +xs
+            font-size: 3em
     .slogan-wrapper
         .horizontal-line
             display: inline-block

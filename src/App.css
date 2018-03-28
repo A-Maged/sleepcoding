@@ -38,77 +38,38 @@ ul, ol {
   transform: translateY(-50%); }
 
 .container {
+  max-width: 90%;
+  width: 900px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
 
-@media (min-width: 768px) {
-  .container {
-    width: 800px; } }
-@media (min-width: 992px) {
-  .container {
-    width: 990px; } }
-@media (min-width: 1200px) {
-  .container {
-    width: 1075px; } }
 header {
-  padding: 10px 0;
+  padding: 15px 0;
   background-color: #fff;
   color: #999; }
   @media (min-width: 768px) {
     header .container {
       padding: 0; } }
-  header .search {
-    display: inline-block;
-    border: 1px solid #dbdbdb;
-    position: relative; }
-    @media (max-width: 576px) {
-      header .search {
-        border: none;
-        width: 40%; } }
-    @media (min-width: 577px) {
-      header .search {
-        width: 30%; } }
-    @media (min-width: 768px) {
-      header .search {
-        width: 200px; } }
-    header .search i {
-      max-width: 45px;
-      padding: 8px 15px;
-      border-right: 1px solid #dbdbdb; }
-      @media (max-width: 576px) {
-        header .search i {
-          border: none;
-          padding-left: 0; } }
-    header .search input {
-      width: calc(100% - 50px);
-      outline: none;
-      padding: 5px 10px;
-      border: none;
-      font-size: 15px; }
-      @media (max-width: 576px) {
-        header .search input {
-          display: none; } }
   header nav {
-    display: inline-block;
-    text-align: center; }
-    @media (max-width: 576px) {
-      header nav {
-        width: 60%;
-        text-align: right; } }
+    display: inline-block; }
     @media (min-width: 577px) {
       header nav {
-        width: 40%; } }
+        display: inline-block;
+        text-align: left; } }
     header nav a {
       display: none;
-      text-decoration: none;
       font-size: 15px;
+      text-decoration: none;
       text-transform: capitalize; }
+      @media (min-width: 577px) {
+        header nav a {
+          margin: 0; } }
       @media (min-width: 768px) {
         header nav a {
-          display: inline-block;
-          margin: 0 0 0 75px; }
+          margin: 0 75px 0 0;
+          display: inline-block; }
           header nav a:hover {
             color: #d6215e; } }
     header nav .active {
@@ -133,15 +94,11 @@ header {
         header nav .toggle-menu {
           display: none; } }
   header .social-media {
-    display: inline-block;
-    text-align: right; }
-    @media (max-width: 576px) {
-      header .social-media {
-        display: none; } }
+    float: right;
+    display: inline-block; }
     @media (min-width: 577px) {
       header .social-media {
-        display: inline-block;
-        width: 30%; } }
+        display: inline-block; } }
     header .social-media a {
       margin: 0 0 0 30px;
       display: inline-block; }
@@ -196,25 +153,30 @@ header {
     font-size: 17px; }
 
 footer {
-  padding: 30px 0;
+  padding: 10px 0;
   background-color: #fff;
   color: #585858;
   text-align: center;
   margin-top: 65px; }
   footer p {
-    margin: 0; }
+    margin: 0;
+    font-size: 0.8em; }
 
 .logo-wrapper {
   text-align: center;
   margin: 65px auto;
-  width: 40%;
+  max-width: 500px;
+  width: 90%;
   text-transform: capitalize; }
   .logo-wrapper .logo {
-    font-size: 55px;
+    font-size: 4em;
     font-family: "Kaushan Script";
     font-weight: 700;
     margin: 0 0 30px 0;
     color: #E91E63; }
+    @media (max-width: 576px) {
+      .logo-wrapper .logo {
+        font-size: 3em; } }
   .logo-wrapper .slogan-wrapper .horizontal-line {
     display: inline-block;
     border: 1px solid #444;
@@ -241,26 +203,24 @@ footer {
       grid-template-columns: repeat(4, 1fr); } }
 
 .posts-preview .post {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  background-color: #fff;
+  max-width: 650px;
+  width: 85%;
   margin: 45px auto;
   padding: 35px;
+  display: grid;
   position: relative;
-  display: grid; }
+  background-color: #fff;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
   @media (max-width: 576px) {
     .posts-preview .post {
       box-shadow: none;
-      width: 90%;
       padding: 25px 25px; } }
   @media (min-width: 577px) {
     .posts-preview .post {
-      width: 80%; } }
-  @media (min-width: 768px) {
-    .posts-preview .post {
-      width: 60%; } }
+      box-shadow: none;
+      padding: 25px 25px; } }
   @media (min-width: 992px) {
     .posts-preview .post {
-      width: 65%;
       grid-template-columns: 1fr 2fr; } }
   @media (min-width: 992px) {
     .posts-preview .post .thumbnail {

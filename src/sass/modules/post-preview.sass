@@ -3,23 +3,22 @@
     // background-color: #ccc
     // padding: 50px 0
     .post
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
-        background-color: #fff
+        max-width: 650px
+        width: 85%
         margin: 45px auto
         padding: 35px
-        position: relative
         display: grid
+        position: relative
+        background-color: #fff
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
         +xs
             box-shadow: none
-            width: 90%
             padding: 25px 25px
-
         +sm
-            width: 80%
-        +md
-            width: 60%
+            box-shadow: none
+            padding: 25px 25px
+            
         +lg
-            width: 65%
             grid-template-columns: 1fr 2fr
 
         .thumbnail

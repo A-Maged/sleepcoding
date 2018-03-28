@@ -1,10 +1,5 @@
 import React from 'react'
 import { NavLink, Link } from "react-router-dom"
-import SearchForm from './search-form'
-
-function onSearchFormSubmit(value){
-    console.log(value)
-}
 
 function handleNavClick(e) {
     // if isActive then showMenu()
@@ -22,10 +17,9 @@ const Header = () => {
         <header>
             <div className="container">
 
-                <SearchForm onSubmit={onSearchFormSubmit} />
-
                 <nav>
                     <NavLink exact activeClassName="active" to="/" onClick={handleNavClick}>home</NavLink>
+                    <NavLink activeClassName="active" to="/blog" onClick={handleNavClick}>blog</NavLink>
                     <NavLink activeClassName="active" to="/about" onClick={handleNavClick}>about</NavLink>
                     <NavLink activeClassName="active" to="/post/:id" onClick={showMenu} className="menu-link">Menu</NavLink>
                     <i className="toggle-menu fas fa-angle-down"></i>
