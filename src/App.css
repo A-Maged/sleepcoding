@@ -66,8 +66,12 @@ header {
   background-color: #fff;
   color: #999;
   position: relative; }
+  header .container {
+    padding: 1.5em; }
   header nav {
-    display: inline-block; }
+    position: absolute;
+    display: inline-block;
+    transition: all 0.5s linear; }
     @media (min-width: 577px) {
       header nav {
         display: inline-block;
@@ -86,9 +90,9 @@ header {
           display: inline-block; }
           header nav a:hover {
             color: #d6215e; } }
-    header nav .active {
-      display: inline-block;
-      color: #d6215e; }
+      header nav a.active {
+        display: inline-block;
+        color: #d6215e; }
     @media (min-width: 768px) {
       header nav .menu-link {
         display: none; } }
@@ -108,13 +112,11 @@ header {
         header nav .toggle-menu-icon {
           display: none; } }
     header nav.show-menu {
-      position: absolute;
-      left: 1.5em;
-      background-color: #fff;
-      padding: 0 10px 10px; }
+      margin-left: -25px;
+      background-color: #fff; }
       header nav.show-menu a {
         display: block;
-        padding: 15px; }
+        padding: 15px 25px; }
         header nav.show-menu a:first-of-type {
           padding-top: 0; }
   header .social-media {
