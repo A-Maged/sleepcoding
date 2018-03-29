@@ -15,7 +15,7 @@ class Header extends Component {
     }
 
     toggleMenu(e) {
-        e.preventDefault();
+        // e.preventDefault();
         let mobileMenu = {...this.state.mobileMenu}
         mobileMenu.displayClass = mobileMenu.displayClass === 'show-menu' ? '' : 'show-menu'
         this.setState({mobileMenu})
@@ -32,9 +32,9 @@ class Header extends Component {
                     </span>
 
                     <nav className={this.state.mobileMenu.displayClass} >
-                        <Link to="/">home</Link>
-                        <Link to="/blog">blog</Link>
-                        <Link to="/about">about</Link>
+                        <Link to="/" onClick={this.toggleMenu}>home</Link>
+                        <Link to="/blog" onClick={this.toggleMenu}>blog</Link>
+                        <Link to="/about" onClick={this.toggleMenu}>about</Link>
                     </nav>
 
                     <div className="social-media">
