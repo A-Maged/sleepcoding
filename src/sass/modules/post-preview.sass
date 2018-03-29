@@ -11,17 +11,14 @@
         position: relative
         background-color: #fff
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
-        +xs
+        +mq($until: tablet)
             box-shadow: none
             padding: 25px 25px
-        +sm
-            box-shadow: none
-            padding: 25px 25px
-        +md
+        +mq($from: tablet)
             grid-template-columns: 1fr 2fr
 
         .thumbnail
-            +md
+            +mq($from: tablet)
                 width: 220px
 
             // +lg
@@ -34,7 +31,7 @@
 
         .details
             line-height: 20px
-            +md
+            +mq($from: tablet)
                 padding-left: 20px
 
             .title

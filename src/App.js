@@ -14,7 +14,7 @@ import Post from './pages/post';
 import Footer from './components/footer';
 
 /* css */
-import './bootstrap3.3.7_Grid-system_and_normalize_only.min.css';
+import './customized bootstrap.css';
 import './App.css';
 
 

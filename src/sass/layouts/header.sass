@@ -5,57 +5,63 @@ header
     .container
         padding: 1.5em
 
-    nav
-        position: absolute
-        display: inline-block
-        transition: all .5s linear
-        +sm
-            display: inline-block
-            text-align: left
-
-        a
+    .toggle-menu
+        +mq($from: tablet)
             display: none
-            font-size: 15px
-            text-decoration: none
-            text-transform: capitalize
-            +sm
-                margin: 0
-            +md
-                margin: 0 75px 0 0
-                display: inline-block
-                &:hover
-                    color: $hover-text-color
 
-            &.active
-                display: inline-block
-                color: $active-text-color
-
-        .menu-link
-            +md
-                display: none
-            .active
-                +xs
-                    display: inline-block
-                +sm
-                    display: inline-block
-
+        .toggle-menu-btn
+            background-color: #fff
+            border: 0
+            outline: none
         .toggle-menu-icon
             font-size: 20px
             margin-left: 5px
+            // margin-top: .4em
             background: none
             border: none
             vertical-align: top
-            +md
-                display: none
+
+
+    .active
+        color: $active-text-color
+
+
+    nav
+        position: absolute
+        display: none
+        transition: all .4s ease-in-out
+        +mq($from: tablet)
+            display: inline-block
+            // text-align: left
 
         &.show-menu
-            margin-left: -25px
-            background-color: #fff
-            a
+            +mq($until: tablet)
                 display: block
-                padding: 15px 25px
-                &:first-of-type
-                    padding-top: 0
+                margin-left: -4em
+                margin-top: 1.5em
+                background-color: #fff
+                a
+                    display: block
+                    margin: auto
+                    padding: 15px 4em
+
+
+        a
+            font-size: 15px
+            text-decoration: none
+            text-transform: capitalize
+            margin: 0 75px 0 0
+            // display: none
+        //     +sm
+        //         margin: 0
+        //     +md
+        //         margin: 0 75px 0 0
+        //         display: inline-block
+        //         &:hover
+        //             color: $hover-text-color
+        //
+
+
 
 
 

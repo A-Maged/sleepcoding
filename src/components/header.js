@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink, Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 
 
@@ -26,12 +26,15 @@ class Header extends Component {
             <header>
                 <div className="container clearfix">
 
-                    <nav className={this.state.mobileMenu.displayClass} onClick={this.toggleMenu}>
-                        <NavLink exact activeClassName="active" to="/">home</NavLink>
-                        <NavLink activeClassName="active" to="/blog">blog</NavLink>
-                        <NavLink activeClassName="active" to="/about">about</NavLink>
-                        <NavLink activeClassName="active" to="/post/:id" onClick={e => e.preventDefault()} className="menu-link">Menu</NavLink>
+                    <span className="toggle-menu" onClick={this.toggleMenu}>
+                        <button className="toggle-menu-btn active">Menu</button>
                         <i className="toggle-menu-icon fas fa-angle-down"></i>
+                    </span>
+
+                    <nav className={this.state.mobileMenu.displayClass} >
+                        <Link to="/">home</Link>
+                        <Link to="/blog">blog</Link>
+                        <Link to="/about">about</Link>
                     </nav>
 
                     <div className="social-media">

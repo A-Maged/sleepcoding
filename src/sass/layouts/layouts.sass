@@ -17,7 +17,7 @@
         font-weight: 700
         margin: 0 0 30px 0
         color: $brand-text-color
-        +xs
+        +mq($until: tablet)
             font-size: 3em
     .slogan-wrapper
         .horizontal-line
@@ -34,12 +34,12 @@
             color: #333
 
 
-.posts-container
-    display: grid
-
-    +sm
-        grid-template-columns: repeat(2, 1fr)
-    +md
-        grid-template-columns: repeat(3, 1fr)
-    +lg
-        grid-template-columns: repeat(4, 1fr)
+// .posts-container
+//     display: grid
+//
+//     +sm
+//         grid-template-columns: repeat(2, 1fr)
+//     +md
+//         grid-template-columns: repeat(3, 1fr)
+//     +lg
+//         grid-template-columns: repeat(4, 1fr)
