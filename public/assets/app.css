@@ -2,13 +2,16 @@
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
 
 body {
   margin: 0;
   font-size: 14px;
   font-family: "Raleway";
-  background-color: #eee; }
+  background-color: #eee;
+  color: #525252; }
 
 a {
   color: inherit;
@@ -24,17 +27,13 @@ p {
 h1 {
   font-size: 2.8em;
   font-weight: 200;
-  color: #525252;
   font-size: 2.4em; }
-
-h2, h3, h4, h5, h6 {
-  color: #525252; }
 
 ul, ol {
   line-height: 30px; }
 
 .vertical-align {
-  position: relative;
+  position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -65,10 +64,19 @@ ul, ol {
   clear: both;
   display: table; }
 
+.overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
 header {
   background-color: #fff;
   color: #999;
-  position: relative; }
+  position: relative;
+  z-index: 10; }
   header .container {
     padding: 1.5em; }
   @media (min-width: 46.25em) {
@@ -163,6 +171,38 @@ header {
     line-height: 29px;
     font-size: 17px; }
 
+.intro-section {
+  background-color: #fff;
+  text-align: center; }
+
+.services-section {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  background: #0f0c29;
+  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); }
+  .services-section .card {
+    vertical-align: top;
+    display: inline-block;
+    min-width: 200px;
+    width: calc(32.333% - 20px);
+    margin-top: 30px;
+    margin-bottom: 30px; }
+    .services-section .card:not(:last-child) {
+      margin-right: 25px; }
+    .services-section .card .icon {
+      margin-bottom: 15px; }
+      .services-section .card .icon i {
+        font-size: 45px; }
+    .services-section .card .title {
+      text-transform: capitalize;
+      font-size: 20px;
+      margin-bottom: 10px; }
+    .services-section .card .describtion {
+      color: #fff;
+      line-height: 24px; }
+
 .about {
   background-color: #fff; }
   @media (max-width: 19.99em) {
@@ -247,5 +287,21 @@ footer {
       font-size: 20px;
       margin: 0 0 10px;
       line-height: 25px; }
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+  color: #fff !important; }
+  .hero .bg-media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%; }
+  .hero .content {
+    margin-top: 20vh;
+    text-align: center; }
 
 /*# sourceMappingURL=app.css.map */

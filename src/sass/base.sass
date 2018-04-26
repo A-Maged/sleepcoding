@@ -16,13 +16,15 @@ $accent-text-color: #525252
     -webkit-box-sizing: border-box
     -moz-box-sizing: border-box
     box-sizing: border-box
-
+    margin: 0
+    padding: 0
 
 body
     margin: 0
     font-size: 14px
     font-family: $font
     background-color: #eee
+    color: $accent-text-color
 
 a
     color: inherit
@@ -38,12 +40,11 @@ p
 h1
     font-size: 2.8em
     font-weight: 200
-    color: $accent-text-color
     font-size: 2.4em
 
 
-h2 , h3 , h4 , h5 , h6
-    color: $accent-text-color
+
+
 
 ul , ol
     line-height: 30px
@@ -67,3 +68,11 @@ ul , ol
         content: " "
         clear: both
         display: table
+
+.overlay
+    background: rgba(0, 0, 0, 0.5)
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
