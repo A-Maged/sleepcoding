@@ -1,3 +1,4 @@
+@import url(customized-bootstrap.css);
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -247,4 +248,4 @@ footer {
       margin: 0 0 10px;
       line-height: 25px; }
 
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=app.css.map */

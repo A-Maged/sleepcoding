@@ -6,16 +6,10 @@ import { HashRouter as Router, Route } from "react-router-dom"; // using HashRou
 import store from './redux/store';
 
 /* components */
-import Header from './components/header';
-import Logo from './components/logo';
 import Home from './pages/home';
+import Blog from './pages/blog';
 import About from './pages/about';
 import Post from './pages/post';
-import Footer from './components/footer';
-
-/* css */
-import './customized bootstrap.css';
-import './App.css';
 
 
 class App extends Component {
@@ -35,14 +29,11 @@ class App extends Component {
 
                     {/* this.logStateWhenChanged() */}
 
-                    <Header />
-                    <Logo />
-
                     <Route exact path="/" component={Home} />
+                    <Route exact path="/blog" component={Blog} />
                     <Route path="/about" component={About} />
                     <Route path="/post/:slug" component={Post} />
 
-                    <Footer />
                 </div>
             </Router>
         );

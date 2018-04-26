@@ -35,7 +35,7 @@ class ListPosts extends Component {
 
     render() {
         return (
-            <div>
+            <section className="posts-preview">
 
                 { this.props.allPosts.map((post)=>{
                     return(
@@ -48,7 +48,7 @@ class ListPosts extends Component {
                     )
                 }) }
 
-            </div>
+            </section>
         );
     }
 }

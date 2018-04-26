@@ -4,20 +4,19 @@ import React from 'react'
 import Header from '../components/header';
 import Logo from '../components/logo';
 import Footer from '../components/footer';
+import ListPosts from '../containers/list-posts'
 
-const Home = () => {
+const Blog = () => {
     return (
         <div>
             <Header />
             <Logo />
 
-            <section className="container">
-                <h2>this the home page</h2>
-            </section>
+            <ListPosts />
 
             <Footer />
         </div>
     );
 }
 
-export default Home;
+export default Blog;
