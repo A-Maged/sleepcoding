@@ -1,97 +1,101 @@
-import React from 'react'
+import React, {Component} from 'react'
 
 /* components */
 import Header from '../components/header';
 import Footer from '../components/footer';
 import Hero from '../components/hero';
 
-const Home = () => {
-    return (
-        <div>
-            <Header />
+class Home extends Component{
+    render(){
+        return (
+            <div>
+                <Header />
 
-            <Hero />
+                <Hero />
 
-            <section className="intro-section">
-                <div className="container">
-                    <div className="image">
-                        <img src="assets/imgs/me.png" alt=""/>
-                    </div>
-                    <div className="text">
-                        <h3>I have a thing for creating Modern, Clean and Interactive web apps.</h3>
-                        <p>I will gladly use my skills to solve your problems in a reasonable time.</p>
-                    </div>
-                </div>
-            </section>
-
-
-
-            <section className="services-section ">
-                    <div className="card">
-                        <div className="icon">
-                            <i className="fas fa-mobile"></i>
+                <section className="intro-section">
+                    <div className="container">
+                        <div className="image">
+                            <img src="assets/imgs/me.png" alt=""/>
                         </div>
-                        <h4 className="title">responsive design</h4>
-                        <p className="describtion">
-                            Responsive design has grown from a preference to a necessity. We employ state-of-the-art responsive design technology to ensure an optimal viewing experience on all devices.
-                        </p>
-                    </div>
-
-                    <div className="card">
-                        <div className="icon">
-                            <i className="fab fa-css3"></i>
+                        <div className="text">
+                            <h3>I have a thing for creating Modern, Clean and Interactive web apps.</h3>
+                            <p>I will gladly use my skills to solve your problems in a reasonable time.</p>
+                            <div className="name">- MAGED</div>
                         </div>
-                        <h4 className="title">single page applications</h4>
-                        <p className="describtion">
-                            Responsive design has grown ate-of-the-art responsive design technology to ensure an optimal viewing experience on all devices.
-                        </p>
                     </div>
+                </section>
 
-                    <div className="card">
-                        <div className="icon">
-                            <i className="fas fa-bolt"></i>
+
+
+                <section className="services-section ">
+                        <div className="card">
+                            <div className="icon">
+                                <i className="fas fa-mobile"></i>
+                            </div>
+                            <h4 className="title">responsive design</h4>
+                            <p className="describtion">
+                                Responsive design has grown from a preference to a necessity. We employ state-of-the-art responsive design technology to ensure an optimal viewing experience on all devices.
+                            </p>
                         </div>
-                        <h4 className="title">wordpress</h4>
-                        <p className="describtion">
-                            Responsive design has grown from a preference to a necessity.  responsive design technology to ensure an optimal viewing experience on all devices.
-                        </p>
-                    </div>
 
-                    <div className="card">
-                        <div className="icon">
-                            <i className="fab fa-react"></i>
+                        <div className="card">
+                            <div className="icon">
+                                <i className="fab fa-css3"></i>
+                            </div>
+                            <h4 className="title">single page applications</h4>
+                            <p className="describtion">
+                                Responsive design has grown ate-of-the-art responsive design technology to ensure an optimal viewing experience on all devices.
+                            </p>
                         </div>
-                        <h4 className="title">single page applications</h4>
-                        <p className="describtion">
-                            Responsive design has grown ate-of-the-art responsive design technology to ensure an optimal viewing experience on all devices.
-                        </p>
-                    </div>
 
-                    <div className="card">
-                        <div className="icon">
-                            <i className="fab fa-wordpress"></i>
+                        <div className="card">
+                            <div className="icon">
+                                <i className="fas fa-bolt"></i>
+                            </div>
+                            <h4 className="title">wordpress</h4>
+                            <p className="describtion">
+                                Responsive design has grown from a preference to a necessity.  responsive design technology to ensure an optimal viewing experience on all devices.
+                            </p>
                         </div>
-                        <h4 className="title">wordpress</h4>
-                        <p className="describtion">
-                            Responsive design has grown from a preference to a necessity.  responsive design technology to ensure an optimal viewing experience on all devices.
-                        </p>
-                    </div>
 
-                    <div className="card">
-                        <div className="icon">
-                            <i className="fas fa-database"></i>
+                        <div className="card">
+                            <div className="icon">
+                                <i className="fab fa-react"></i>
+                            </div>
+                            <h4 className="title">single page applications</h4>
+                            <p className="describtion">
+                                Responsive design has grown ate-of-the-art responsive design technology to ensure an optimal viewing experience on all devices.
+                            </p>
                         </div>
-                        <h4 className="title">responsive design</h4>
-                        <p className="describtion">
-                            Responsive design has grown from a preference to a necessity. We employ state-of-the-art responsive design technology to ensure an optimal viewing experience on all devices.
-                        </p>
-                    </div>
-            </section>
+
+                        <div className="card">
+                            <div className="icon">
+                                <i className="fab fa-wordpress"></i>
+                            </div>
+                            <h4 className="title">wordpress</h4>
+                            <p className="describtion">
+                                Responsive design has grown from a preference to a necessity.  responsive design technology to ensure an optimal viewing experience on all devices.
+                            </p>
+                        </div>
+
+                        <div className="card">
+                            <div className="icon">
+                                <i className="fas fa-database"></i>
+                            </div>
+                            <h4 className="title">responsive design</h4>
+                            <p className="describtion">
+                                Responsive design has grown from a preference to a necessity. We employ state-of-the-art responsive design technology to ensure an optimal viewing experience on all devices.
+                            </p>
+                        </div>
+                </section>
 
 
-            <Footer />
-        </div>
-    );
+                <Footer />
+            </div>
+        );
+
+    }
 }
 
 export default Home;

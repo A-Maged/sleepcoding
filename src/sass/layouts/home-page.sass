@@ -1,16 +1,15 @@
 .intro-section
     background-color: #fff
     text-align: center
-
-    .container
-        .row
-            position: relative
+    &:hover .image
+        opacity: .5
 
 
     .text
         display: inline-block
         vertical-align: middle
-        margin-top: 18px 
+        margin-top: 18px
+        width: calc(100% - 200px)
 
     .image
         display: inline-block
@@ -23,6 +22,7 @@
         vertical-align: middle
         margin-right: 25px
         // margin: 0 auto 25px
+        transition: all .5s ease-out
         img
             width: 90%
             height: 90%
