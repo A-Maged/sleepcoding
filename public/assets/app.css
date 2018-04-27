@@ -1179,7 +1179,7 @@ a {
   color: inherit;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #d6215e;
+    color: #C06C84;
     text-decoration: none; }
 
 p {
@@ -1255,7 +1255,7 @@ header {
     border: none;
     vertical-align: top; }
   header .active {
-    color: #d6215e; }
+    color: #C06C84; }
   header nav {
     position: absolute;
     display: none;
@@ -1342,7 +1342,11 @@ header {
     display: inline-block;
     vertical-align: middle;
     margin-top: 18px;
+    min-width: 250px;
     width: calc(100% - 200px); }
+    @media (max-width: 601px) {
+      .intro-section .text {
+        width: 100%; } }
   .intro-section .image {
     display: inline-block;
     background-color: #e6e6e6;
@@ -1354,6 +1358,10 @@ header {
     vertical-align: middle;
     margin-right: 25px;
     transition: all 0.5s ease-out; }
+    @media (max-width: 601px) {
+      .intro-section .image {
+        margin: auto;
+        display: block; } }
     .intro-section .image img {
       width: 90%;
       height: 90%;
@@ -1364,18 +1372,11 @@ header {
   position: relative;
   text-align: center;
   color: #fff;
-  background: #0f0c29;
-  background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);
-  background: linear-gradient(to right, #24243e, #302b63, #0f0c29); }
+  background: #355C7D;
+  background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+  background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); }
   .services-section .card {
-    vertical-align: top;
-    display: inline-block;
-    min-width: 200px;
-    width: calc(32.333% - 30px);
-    margin-top: 30px;
-    margin-bottom: 30px; }
-    .services-section .card:not(:last-child) {
-      margin-right: 35px; }
+    padding: 25px 20px; }
     .services-section .card .icon {
       margin-bottom: 15px; }
       .services-section .card .icon i {
@@ -1483,8 +1484,8 @@ footer {
   transition: background-color 0.3s ease-in-out, font-weight 0.3s ease-in-out, transform 0.2s ease-in-out;
   display: inline-block; }
   .btn:hover {
-    background-color: #242424;
-    font-weight: 600;
+    color: #fff;
+    background-color: #9670a2;
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
   .btn:active {
@@ -1494,9 +1495,11 @@ footer {
 .hero {
   position: relative;
   width: 100%;
-  height: 50vh;
+  min-height: 345px;
   overflow: hidden;
   color: #fff !important; }
+  .hero .overlay {
+    background: rgba(53, 92, 125, 0.5); }
   .hero .bg-media {
     position: absolute;
     top: 0;
@@ -1504,7 +1507,13 @@ footer {
     min-width: 100%;
     min-height: 100%; }
   .hero .content {
-    margin-top: 20vh;
-    text-align: center; }
+    text-align: center;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+    .hero .content .slogan {
+      margin-bottom: 40px; }
 
 /*# sourceMappingURL=app.css.map */

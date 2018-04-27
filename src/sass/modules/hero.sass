@@ -1,9 +1,14 @@
 .hero
     position: relative
     width: 100%
-    height: 50vh
+    min-height: 345px
+    // height: 50vh
     overflow: hidden
     color: #fff !important
+
+    .overlay
+        background: rgba(#355C7D, 0.5)
+
 
     .bg-media
         position: absolute
@@ -13,5 +18,8 @@
         min-height: 100%
 
     .content
-        margin-top: 20vh
+        // margin-top: 15vh
         text-align: center
+        +vertical-align
+        .slogan
+            margin-bottom: 40px
