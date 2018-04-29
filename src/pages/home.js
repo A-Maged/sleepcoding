@@ -103,7 +103,7 @@ class Home extends Component{
 
                         <div className="card ">
                             <div className="image">
-                                <img src="assets/imgs/braun.png" alt=""/>
+                                <img src="assets/imgs/000cm.png" alt=""/>
                             </div>
 
                             <div className="info">
@@ -284,6 +284,16 @@ class Home extends Component{
                             </div>
                         </div>
 
+                    </div>
+                </section>
+
+                <section className="section-hire-me">
+                    <div className="overlay">
+                        <div className="section-title-wrapper">
+                            <h2 className="title">let's work together</h2>
+                        </div>
+                        <p className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint odit quisquam sapiente dicta ipsam dolores ducimus eaque voluptatibus provident velit cupiditate omnis deleniti, tempora commodi, hic sequi, a necessitatibus assumenda.</p>
+                        <a className="btn" href="https://www.upwork.com/freelancers/~01d98adf66b01f0e59" target="_blank">hire me</a>
                     </div>
                 </section>
 

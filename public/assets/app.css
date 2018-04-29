@@ -1228,6 +1228,10 @@ ul, ol {
 
 .overlay {
   background: rgba(0, 0, 0, 0.5);
+  height: 100%; }
+
+.overlay-absolute {
+  background: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
   left: 0;
@@ -1466,6 +1470,9 @@ footer {
     overflow: hidden;
     position: relative;
     color: #fff; }
+    @media (max-width: 320px) {
+      .section-portfolio .card {
+        margin: 13px 0; } }
     .section-portfolio .card .image {
       background-color: #222;
       width: 100%;
@@ -1525,6 +1532,25 @@ footer {
           .section-portfolio .card .info .tags .tag.tag-react {
             background-color: #03A9F4;
             color: #fff; }
+
+.section-hire-me {
+  background-image: url(../assets/imgs/000Upwork-Banner-620x413.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: center;
+  position: relative;
+  color: #fff; }
+  .section-hire-me .overlay {
+    padding: 80px 30px; }
+  .section-hire-me .section-title-wrapper .title::before {
+    display: none; }
+  .section-hire-me .text {
+    color: #fff;
+    margin: 10px auto 35px;
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    width: 90%; }
 
 .about {
   background-color: #fff; }

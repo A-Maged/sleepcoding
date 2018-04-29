@@ -93,6 +93,10 @@
         overflow: hidden
         position: relative
         color: #fff
+
+        @media (max-width: 320px)
+            margin: 13px 0
+
         .image
             background-color: #222
             width: 100%
@@ -165,3 +169,27 @@
                     &.tag-react
                         background-color: #03A9F4
                         color: #fff
+
+.section-hire-me
+    background-image: url(../assets/imgs/000Upwork-Banner-620x413.jpg)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: top
+    text-align: center
+    position: relative
+    color: #fff
+
+    .overlay
+        padding: 80px 30px
+
+    .section-title-wrapper
+        .title
+            &::before
+                display: none
+
+    .text
+        color: #fff
+        margin: 10px auto 35px
+        font-size: 17px
+        letter-spacing: 1.5px
+        width: 90%
