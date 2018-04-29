@@ -2,12 +2,12 @@ $logo-font:  'Kaushan Script'
 $font: 'Raleway'
 $hover-text-color: #C06C84
 $active-text-color: #C06C84
-$brand-text-color: #E91E63
+$brand-text-color: #aa76bb
 $accent-text-color: #525252
 
 // #a08f68 , khaki , #dab23c , #eaba2c
 // #7f51ec
-// #E91E63
+// #E91E63  ,  #aa76bb  , #b589c3
 
 *
     -webkit-box-sizing: border-box
@@ -53,7 +53,8 @@ ul , ol
 
 .container
     max-width: 90%
-    width: 900px
+    // width: 900px
+    width: 1000px
     padding-right: 15px
     padding-left: 15px
     margin-right: auto
@@ -73,3 +74,21 @@ ul , ol
     left: 0
     width: 100%
     height: 100%
+
+
+.section-title-wrapper
+    .title
+        margin: 0 auto 30px
+        display: inline-block
+        text-transform: capitalize
+        font-size: 25px
+        position: relative
+        &::before
+            content: ""
+            display: block
+            position: absolute
+            bottom: -3px
+            left: 0
+            width: 30px
+            height: 2px
+            background-color: #525252

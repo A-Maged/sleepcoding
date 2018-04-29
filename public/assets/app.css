@@ -1203,7 +1203,7 @@ ul, ol {
 
 .container {
   max-width: 90%;
-  width: 900px;
+  width: 1000px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -1233,6 +1233,22 @@ ul, ol {
   left: 0;
   width: 100%;
   height: 100%; }
+
+.section-title-wrapper .title {
+  margin: 0 auto 30px;
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 25px;
+  position: relative; }
+  .section-title-wrapper .title::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background-color: #525252; }
 
 header {
   background-color: #fff;
@@ -1337,8 +1353,7 @@ footer {
   padding: 10px 0;
   background-color: #fff;
   color: #585858;
-  text-align: center;
-  margin-top: 65px; }
+  text-align: center; }
   footer p {
     margin: 0;
     font-size: 0.8em; }
@@ -1354,7 +1369,7 @@ footer {
     font-family: "Kaushan Script";
     font-weight: 700;
     margin: 0 0 30px 0;
-    color: #E91E63; }
+    color: #aa76bb; }
     @media (max-width: 46.24em) {
       .logo-wrapper .logo {
         font-size: 3em; } }
@@ -1406,15 +1421,25 @@ footer {
       margin-top: 15px; }
 
 .services-section {
-  padding: 85px 45px 40px;
+  padding: 30px 0;
   position: relative;
   text-align: center;
   color: #fff;
   background: #355C7D;
   background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
   background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); }
+  .services-section .container {
+    padding: 0;
+    max-width: 95%; }
+  .services-section .section-title-wrapper .title::before {
+    background-color: #fff; }
   .services-section .card {
-    padding: 25px 20px; }
+    display: inline-block;
+    width: 247px;
+    height: 208px;
+    padding: 0;
+    margin: 20px;
+    vertical-align: top; }
     .services-section .card .icon {
       margin-bottom: 15px; }
       .services-section .card .icon i {
@@ -1428,16 +1453,17 @@ footer {
       line-height: 24px; }
 
 .section-portfolio {
-  padding: 85px 45px 40px;
+  padding: 30px 0;
   text-align: center; }
+  .section-portfolio .container {
+    padding: 0; }
   .section-portfolio .card {
-    background-color: green;
     display: inline-block;
-    width: 247px;
+    width: 280px;
     height: 208px;
-    overflow: hidden;
     padding: 0;
-    margin: 20px;
+    margin: 13px;
+    overflow: hidden;
     position: relative;
     color: #fff; }
     .section-portfolio .card .image {
@@ -1467,37 +1493,38 @@ footer {
         .section-portfolio .card .info .header .title {
           padding: 10px 20px;
           position: relative;
-          background-color: #302c76;
+          background: #355C7D;
+          background: -webkit-linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+          background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
           text-transform: uppercase; }
-          .section-portfolio .card .info .header .title::before {
-            content: "";
-            width: 5px;
-            height: 100%;
-            display: inline-block;
-            position: absolute;
-            top: 0;
-            left: 0;
-            background-color: red; }
         .section-portfolio .card .info .header .icons {
-          padding: 10px 20px;
+          padding: 10px 15px 10px 0;
           text-align: right; }
+          .section-portfolio .card .info .header .icons .fas {
+            font-size: 17px;
+            margin-right: 15px; }
           .section-portfolio .card .info .header .icons > * {
             display: inline-block; }
-      .section-portfolio .card .info .tags .tag {
-        display: inline-block;
-        margin: 5px;
-        padding: 5px 10px;
-        text-transform: uppercase;
-        background-color: #eee;
-        color: #000; }
-        .section-portfolio .card .info .tags .tag.tag-sass {
-          background-color: pink;
-          color: #fff; }
-        .section-portfolio .card .info .tags .tag.tag-js {
-          background-color: yellow; }
-        .section-portfolio .card .info .tags .tag.tag-react {
-          background-color: #03A9F4;
-          color: #fff; }
+      .section-portfolio .card .info .tags {
+        position: absolute;
+        top: 65%;
+        transform: translateY(-50%); }
+        .section-portfolio .card .info .tags .tag {
+          display: inline-block;
+          margin: 4px;
+          padding: 5px 10px;
+          text-transform: uppercase;
+          background-color: #eee;
+          color: #000;
+          font-size: 13px; }
+          .section-portfolio .card .info .tags .tag.tag-sass {
+            background-color: pink;
+            color: #fff; }
+          .section-portfolio .card .info .tags .tag.tag-js {
+            background-color: yellow; }
+          .section-portfolio .card .info .tags .tag.tag-react {
+            background-color: #03A9F4;
+            color: #fff; }
 
 .about {
   background-color: #fff; }
