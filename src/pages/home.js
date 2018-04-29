@@ -26,8 +26,6 @@ class Home extends Component{
                     </div>
                 </section>
 
-
-
                 <section className="services-section ">
                     <div className="container-fluid">
                         <div className="row">
@@ -100,9 +98,158 @@ class Home extends Component{
                         </div>
                 </section>
 
-
                 <section className="section-portfolio">
-                    section-portfolio
+
+                    <div className="card ">
+                        <div className="image">
+                            <img src="assets/imgs/braun.png" alt=""/>
+                        </div>
+
+                        <div className="info">
+                            <div className="header">
+                                <div className="row">
+                                    <div className="col-sm-7">
+                                        <div className="title">react app</div>
+                                    </div>
+                                    <div className="col-sm-5">
+                                        <div className="icons">
+                                            <a className="open-external-icon" href="" target="_blank">o</a>
+                                            <i className="lightbox-icon">l</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="tags">
+                                <div className="tag tag-sass">sass</div>
+                                <div className="tag tag-js">js</div>
+                                <div className="tag tag-react">react</div>
+                                <div className="tag tag-react">react</div>
+                                <div className="tag tag-react">react</div>
+                                <div className="tag tag-react">react</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="card ">
+                        <div className="image">
+                            <img src="assets/imgs/braun.png" alt=""/>
+                        </div>
+
+                        <div className="info">
+                            <div className="header">
+                                <div className="row">
+                                    <div className="col-sm-7">
+                                        <div className="title">python script</div>
+                                    </div>
+                                    <div className="col-sm-5">
+                                        <div className="icons">
+                                            <a className="open-external-icon" href="" target="_blank">o</a>
+                                            <i className="lightbox-icon">l</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="tags">
+                                <div className="tag tag-sass">sass</div>
+                                <div className="tag tag-js">js</div>
+                                <div className="tag tag-react">react</div>
+                                <div className="tag tag-react">react</div>
+                                <div className="tag tag-react">react</div>
+                                <div className="tag tag-react">react</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="card ">
+                        <div className="image">
+                            <img src="assets/imgs/braun.png" alt=""/>
+                        </div>
+
+                        <div className="info">
+                            <div className="header">
+                                <div className="row">
+                                    <div className="col-sm-7">
+                                        <div className="title">ui / ux</div>
+                                    </div>
+                                    <div className="col-sm-5">
+                                        <div className="icons">
+                                            <a className="open-external-icon" href="" target="_blank">o</a>
+                                            <i className="lightbox-icon">l</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="tags">
+                                <div className="tag tag-sass">sass</div>
+                                <div className="tag tag-js">js</div>
+                                <div className="tag tag-react">react</div>
+                                <div className="tag tag-react">react</div>
+                                <div className="tag tag-react">react</div>
+                                <div className="tag tag-react">react</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="card ">
+                        <div className="image">
+                            <img src="assets/imgs/braun.png" alt=""/>
+                        </div>
+
+                        <div className="info">
+                            <div className="header">
+                                <div className="row">
+                                    <div className="col-sm-7">
+                                        <div className="title">ui / ux</div>
+                                    </div>
+                                    <div className="col-sm-5">
+                                        <div className="icons">
+                                            <a className="open-external-icon" href="" target="_blank">o</a>
+                                            <i className="lightbox-icon">l</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="tags">
+                                <div className="tag tag-sass">sass</div>
+                                <div className="tag tag-js">js</div>
+                                <div className="tag tag-react">react</div>
+                                <div className="tag tag-react">react</div>
+                                <div className="tag tag-react">react</div>
+                                <div className="tag tag-react">react</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="card ">
+                        <div className="image">
+                            <img src="assets/imgs/braun.png" alt=""/>
+                        </div>
+
+                        <div className="info">
+                            <div className="header">
+                                <div className="row">
+                                    <div className="col-sm-7">
+                                        <div className="title">ui / ux</div>
+                                    </div>
+                                    <div className="col-sm-5">
+                                        <div className="icons">
+                                            <a className="open-external-icon" href="" target="_blank">o</a>
+                                            <i className="lightbox-icon">l</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="tags">
+                                <div className="tag tag-sass">sass</div>
+                                <div className="tag tag-js">js</div>
+                                <div className="tag tag-react">react</div>
+                                <div className="tag tag-react">react</div>
+                                <div className="tag tag-react">react</div>
+                                <div className="tag tag-react">react</div>
+                            </div>
+                        </div>
+                    </div>
+
                 </section>
 
 

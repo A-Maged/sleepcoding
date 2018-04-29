@@ -1333,6 +1333,44 @@ header {
     line-height: 29px;
     font-size: 17px; }
 
+footer {
+  padding: 10px 0;
+  background-color: #fff;
+  color: #585858;
+  text-align: center;
+  margin-top: 65px; }
+  footer p {
+    margin: 0;
+    font-size: 0.8em; }
+
+.logo-wrapper {
+  text-align: center;
+  margin: 65px auto;
+  max-width: 500px;
+  width: 90%;
+  text-transform: capitalize; }
+  .logo-wrapper .logo {
+    font-size: 4em;
+    font-family: "Kaushan Script";
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    color: #E91E63; }
+    @media (max-width: 46.24em) {
+      .logo-wrapper .logo {
+        font-size: 3em; } }
+  .logo-wrapper .slogan-wrapper .horizontal-line {
+    display: inline-block;
+    border: 1px solid #444;
+    width: 55px;
+    height: 0; }
+  .logo-wrapper .slogan-wrapper .slogan {
+    display: inline-block;
+    font-size: 20px;
+    padding: 0 5px;
+    margin: 0;
+    vertical-align: middle;
+    color: #333; }
+
 .intro-section {
   background-color: #fff;
   text-align: center; }
@@ -1389,6 +1427,78 @@ header {
       color: #fff;
       line-height: 24px; }
 
+.section-portfolio {
+  padding: 85px 45px 40px;
+  text-align: center; }
+  .section-portfolio .card {
+    background-color: green;
+    display: inline-block;
+    width: 247px;
+    height: 208px;
+    overflow: hidden;
+    padding: 0;
+    margin: 20px;
+    position: relative;
+    color: #fff; }
+    .section-portfolio .card .image {
+      background-color: #222;
+      width: 100%;
+      margin: auto;
+      height: 100%; }
+      .section-portfolio .card .image img {
+        width: 100%;
+        height: 100%; }
+    .section-portfolio .card:hover .info {
+      transform: translateY(0);
+      opacity: 1; }
+    .section-portfolio .card .info {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(100%);
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: all 0.3s ease-in-out; }
+      .section-portfolio .card .info .header {
+        margin-bottom: 10px;
+        margin-top: 20px; }
+        .section-portfolio .card .info .header .title {
+          padding: 10px 20px;
+          position: relative;
+          background-color: #302c76;
+          text-transform: uppercase; }
+          .section-portfolio .card .info .header .title::before {
+            content: "";
+            width: 5px;
+            height: 100%;
+            display: inline-block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: red; }
+        .section-portfolio .card .info .header .icons {
+          padding: 10px 20px;
+          text-align: right; }
+          .section-portfolio .card .info .header .icons > * {
+            display: inline-block; }
+      .section-portfolio .card .info .tags .tag {
+        display: inline-block;
+        margin: 5px;
+        padding: 5px 10px;
+        text-transform: uppercase;
+        background-color: #eee;
+        color: #000; }
+        .section-portfolio .card .info .tags .tag.tag-sass {
+          background-color: pink;
+          color: #fff; }
+        .section-portfolio .card .info .tags .tag.tag-js {
+          background-color: yellow; }
+        .section-portfolio .card .info .tags .tag.tag-react {
+          background-color: #03A9F4;
+          color: #fff; }
+
 .about {
   background-color: #fff; }
   @media (max-width: 19.99em) {
@@ -1403,44 +1513,6 @@ header {
   @media (min-width: 61.25em) {
     .about {
       padding: 3.5em; } }
-
-footer {
-  padding: 10px 0;
-  background-color: #fff;
-  color: #585858;
-  text-align: center;
-  margin-top: 65px; }
-  footer p {
-    margin: 0;
-    font-size: 0.8em; }
-
-.logo-wrapper {
-  text-align: center;
-  margin: 65px auto;
-  max-width: 500px;
-  width: 90%;
-  text-transform: capitalize; }
-  .logo-wrapper .logo {
-    font-size: 4em;
-    font-family: "Kaushan Script";
-    font-weight: 700;
-    margin: 0 0 30px 0;
-    color: #E91E63; }
-    @media (max-width: 46.24em) {
-      .logo-wrapper .logo {
-        font-size: 3em; } }
-  .logo-wrapper .slogan-wrapper .horizontal-line {
-    display: inline-block;
-    border: 1px solid #444;
-    width: 55px;
-    height: 0; }
-  .logo-wrapper .slogan-wrapper .slogan {
-    display: inline-block;
-    font-size: 20px;
-    padding: 0 5px;
-    margin: 0;
-    vertical-align: middle;
-    color: #333; }
 
 .posts-preview .post {
   max-width: 750px;
