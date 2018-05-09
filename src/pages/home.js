@@ -25,21 +25,16 @@ class Home extends Component{
                                 <img src="assets/imgs/000cm.png" alt=""/>
                             </div>
 
+                            <div className="preview-options">
+                                <a className="open-external-icon" href="" target="_blank">
+                                    <i className="fas fa-external-link-alt"></i>
+                                </a>
+                                <i className="lightbox-icon fas fa-search-plus"></i>
+                            </div>
+
                             <div className="info">
                                 <div className="header">
-                                    <div className="row">
-                                        <div className="col-sm-7">
-                                            <div className="title">react app</div>
-                                        </div>
-                                        <div className="col-sm-5">
-                                            <div className="icons">
-                                                <a className="open-external-icon" href="" target="_blank">
-                                                    <i className="fas fa-external-link-alt"></i>
-                                                </a>
-                                                <i className="lightbox-icon fas fa-search-plus"></i>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <div className="title">react app</div>
                                 </div>
                                 <div className="tags">
                                     <div className="tag tag-sass">sass</div>
@@ -58,81 +53,16 @@ class Home extends Component{
                                 <img src="assets/imgs/braun.png" alt=""/>
                             </div>
 
-                            <div className="info">
-                                <div className="header">
-                                    <div className="row">
-                                        <div className="col-sm-7">
-                                            <div className="title">python script</div>
-                                        </div>
-                                        <div className="col-sm-5">
-                                            <div className="icons">
-                                                <a className="open-external-icon" href="" target="_blank">
-                                                    <i className="fas fa-external-link-alt"></i>
-                                                </a>
-                                                <i className="lightbox-icon fas fa-search-plus"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="tags">
-                                    <div className="tag tag-sass">sass</div>
-                                    <div className="tag tag-js">js</div>
-                                    <div className="tag tag-wordpress">wordpress</div>
-                                    <div className="tag tag-react">react</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="card ">
-                            <div className="image">
-                                <img src="assets/imgs/braun.png" alt=""/>
+                            <div className="preview-options">
+                                <a className="open-external-icon" href="" target="_blank">
+                                    <i className="fas fa-external-link-alt"></i>
+                                </a>
+                                <i className="lightbox-icon fas fa-search-plus"></i>
                             </div>
 
                             <div className="info">
                                 <div className="header">
-                                    <div className="row">
-                                        <div className="col-sm-7">
-                                            <div className="title">ui / ux</div>
-                                        </div>
-                                        <div className="col-sm-5">
-                                            <div className="icons">
-                                                <a className="open-external-icon" href="" target="_blank">
-                                                    <i className="fas fa-external-link-alt"></i>
-                                                </a>
-                                                <i className="lightbox-icon fas fa-search-plus"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="tags">
-                                    <div className="tag tag-sass">sass</div>
-                                    <div className="tag tag-js">js</div>
-                                    <div className="tag tag-wordpress">wordpress</div>
-                                    <div className="tag tag-react">react</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="card ">
-                            <div className="image">
-                                <img src="assets/imgs/braun.png" alt=""/>
-                            </div>
-
-                            <div className="info">
-                                <div className="header">
-                                    <div className="row">
-                                        <div className="col-sm-7">
-                                            <div className="title">ui / ux</div>
-                                        </div>
-                                        <div className="col-sm-5">
-                                            <div className="icons">
-                                                <a className="open-external-icon" href="" target="_blank">
-                                                    <i className="fas fa-external-link-alt"></i>
-                                                </a>
-                                                <i className="lightbox-icon fas fa-search-plus"></i>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <div className="title">python script</div>
                                 </div>
                                 <div className="tags">
                                     <div className="tag tag-sass">sass</div>
@@ -145,24 +75,19 @@ class Home extends Component{
 
                         <div className="card ">
                             <div className="image">
-                                <img src="assets/imgs/braun.png" alt=""/>
+                                <img src="assets/imgs/000cm.png" alt=""/>
+                            </div>
+
+                            <div className="preview-options">
+                                <a className="open-external-icon" href="" target="_blank">
+                                    <i className="fas fa-external-link-alt"></i>
+                                </a>
+                                <i className="lightbox-icon fas fa-search-plus"></i>
                             </div>
 
                             <div className="info">
                                 <div className="header">
-                                    <div className="row">
-                                        <div className="col-sm-7">
-                                            <div className="title">ui / ux</div>
-                                        </div>
-                                        <div className="col-sm-5">
-                                            <div className="icons">
-                                                <a className="open-external-icon" href="" target="_blank">
-                                                    <i className="fas fa-external-link-alt"></i>
-                                                </a>
-                                                <i className="lightbox-icon fas fa-search-plus"></i>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <div className="title">ui / ux</div>
                                 </div>
                                 <div className="tags">
                                     <div className="tag tag-sass">sass</div>
@@ -175,24 +100,69 @@ class Home extends Component{
 
                         <div className="card ">
                             <div className="image">
-                                <img src="assets/imgs/braun.png" alt=""/>
+                                <img src="assets/imgs/000cm.png" alt=""/>
+                            </div>
+
+                            <div className="preview-options">
+                                <a className="open-external-icon" href="" target="_blank">
+                                    <i className="fas fa-external-link-alt"></i>
+                                </a>
+                                <i className="lightbox-icon fas fa-search-plus"></i>
                             </div>
 
                             <div className="info">
                                 <div className="header">
-                                    <div className="row">
-                                        <div className="col-sm-7">
-                                            <div className="title">ui / ux</div>
-                                        </div>
-                                        <div className="col-sm-5">
-                                            <div className="icons">
-                                                <a className="open-external-icon" href="" target="_blank">
-                                                    <i className="fas fa-external-link-alt"></i>
-                                                </a>
-                                                <i className="lightbox-icon fas fa-search-plus"></i>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <div className="title">ui / ux</div>
+                                </div>
+                                <div className="tags">
+                                    <div className="tag tag-sass">sass</div>
+                                    <div className="tag tag-js">js</div>
+                                    <div className="tag tag-react">react</div>
+                                    <div className="tag tag-wordpress">wordpress</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="card ">
+                            <div className="image">
+                                <img src="assets/imgs/000cm.png" alt=""/>
+                            </div>
+
+                            <div className="preview-options">
+                                <a className="open-external-icon" href="" target="_blank">
+                                    <i className="fas fa-external-link-alt"></i>
+                                </a>
+                                <i className="lightbox-icon fas fa-search-plus"></i>
+                            </div>
+
+                            <div className="info">
+                                <div className="header">
+                                    <div className="title">ui / ux</div>
+                                </div>
+                                <div className="tags">
+                                    <div className="tag tag-sass">sass</div>
+                                    <div className="tag tag-js">js</div>
+                                    <div className="tag tag-react">react</div>
+                                    <div className="tag tag-wordpress">wordpress</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="card ">
+                            <div className="image">
+                                <img src="assets/imgs/000cm.png" alt=""/>
+                            </div>
+
+                            <div className="preview-options">
+                                <a className="open-external-icon" href="" target="_blank">
+                                    <i className="fas fa-external-link-alt"></i>
+                                </a>
+                                <i className="lightbox-icon fas fa-search-plus"></i>
+                            </div>
+
+                            <div className="info">
+                                <div className="header">
+                                    <div className="title">ui / ux</div>
                                 </div>
                                 <div className="tags">
                                     <div className="tag tag-sass">sass</div>

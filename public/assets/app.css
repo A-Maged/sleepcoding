@@ -1396,8 +1396,6 @@ footer {
   text-align: center; }
   .intro-section:hover .image {
     opacity: 0.5; }
-  .intro-section .container {
-    width: 900px; }
   .intro-section .text {
     display: inline-block;
     vertical-align: middle;
@@ -1484,8 +1482,29 @@ footer {
       .section-portfolio .card .image img {
         width: 100%;
         height: 100%; }
+    .section-portfolio .card .preview-options {
+      position: absolute;
+      top: 0;
+      transition: all 0.3s ease-in-out;
+      transform: translateY(-100%);
+      width: 100%;
+      text-align: center; }
+      .section-portfolio .card .preview-options > * {
+        display: inline-block;
+        background-color: red;
+        padding: 9px 15px;
+        margin: 10px 13px;
+        background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D); }
+        .section-portfolio .card .preview-options > *:hover, .section-portfolio .card .preview-options > *:focus {
+          color: inherit; }
+      .section-portfolio .card .preview-options .fas {
+        font-size: 25px; }
+      .section-portfolio .card .preview-options .lightbox-icon:hover, .section-portfolio .card .preview-options .lightbox-icon:focus {
+        cursor: pointer; }
+    .section-portfolio .card:hover .preview-options {
+      transform: translateY(110%); }
     .section-portfolio .card:hover .info {
-      transform: translateY(0);
+      transform: translateY(100%);
       opacity: 1; }
     .section-portfolio .card .info {
       width: 100%;
@@ -1493,13 +1512,13 @@ footer {
       position: absolute;
       top: 0;
       left: 0;
-      transform: translateY(100%);
       background-color: rgba(0, 0, 0, 0.5);
-      opacity: 0;
+      opacity: 1;
       transition: all 0.3s ease-in-out; }
       .section-portfolio .card .info .header {
         margin-bottom: 10px;
-        margin-top: 20px; }
+        margin-top: 20px;
+        float: left; }
         .section-portfolio .card .info .header .title {
           padding: 10px 20px;
           position: relative;
@@ -1557,18 +1576,6 @@ footer {
 
 .about {
   background-color: #fff; }
-  @media (max-width: 19.99em) {
-    .about {
-      padding: 1em; } }
-  @media (min-width: 20em) and (max-width: 46.24em) {
-    .about {
-      padding: 2em; } }
-  @media (min-width: 46.25em) and (max-width: 61.24em) {
-    .about {
-      padding: 3em; } }
-  @media (min-width: 61.25em) {
-    .about {
-      padding: 3.5em; } }
 
 .posts-preview .post {
   max-width: 750px;

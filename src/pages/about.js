@@ -13,7 +13,9 @@ class About extends Component {
                 <Logo />
 
                 <section className="about">
-                    this is the about me page
+                    <div className="container">
+                        this is the about me page
+                    </div>
                 </section>
 
                 <Footer />
