@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sleep Coding</title>
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Raleway:400,700" rel="stylesheet"> -->
+    <link rel="stylesheet" href="assets/app.css">
+  </head>
+  <body>
+
+    <!-- component: header -->
+    <header>
+      <div class="container clearfix">
+
+          <span class="toggle-menu" onClick="toggleMenu">
+              <button class="toggle-menu-btn active">Menu</button>
+              <i class="toggle-menu-icon fas fa-angle-down"></i>
+          </span>
+
+          <nav class={this.state.mobileMenu.displayClass} >
+              <a to="/" onClick="toggleMenu">home</a>
+              <a to="/blog" onClick="toggleMenu">blog</a>
+              <a to="/about" onClick="toggleMenu">about</a>
+          </nav>
+
+          <div class="social-media">
+              <a to="#"><i class="fab fa-facebook-f"></i></a>
+              <a to="#"><i class="fab fa-github"></i></a>
+              <a to="#"><i class="fab fa-instagram"></i></a>
+          </div>
+      </div>
+    </header>
+    <!-- end component: header -->
+
+    <!-- component: logo -->
+    <div class="logo-wrapper">
+        <h1 class="logo">sleep coding.</h1>
+        <div class="slogan-wrapper">
+            <span class="horizontal-line"></span>
+            <p class="slogan">learn by doing</p>
+            <span class="horizontal-line"></span>
+        </div>
+    </div>
+    <!-- end component: logo -->
+
+
+    <!-- section: posts-preview -->
+    <section class="posts-preview">
+
+        <!-- component: wide-card -->
+        <div class="post">
+            <div class="thumbnail">
+                <a href="#">
+                    <img src="assets/imgs/1.jpg" alt="" />
+                </a>
+            </div>
+
+            <div class="details">
+                <div class="vertical-align">
+                    <h4 class="title">
+                        <a href="#">
+                            laravel service container from scratch
+                        </a>
+                    </h4>
+                    <p class="excerpt">
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum tempora quo nobis repudiandae, aut nemo corporis earum, repellat quam vitae, eius quaerat, sit! Odio sed voluptatem necessitatibus dolorem obcaecati, consectetur.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- end component: wide-card -->
+
+
+
+        <!-- component: wide-card -->
+        <div class="post">
+            <div class="thumbnail">
+                <a href="#">
+                    <img src="assets/imgs/2.jpg" alt="" />
+                </a>
+            </div>
+
+            <div class="details">
+                <div class="vertical-align">
+                    <h4 class="title">
+                        <a href="#">
+                            advanced oop concepts in php 
+                        </a>
+                    </h4>
+                    <p class="excerpt">
+                         consectetur adipisicing elit. Illum tempora quo nobis repudiandae, aut nemo corporis earum, repellat quam vitae,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum tempora quo nobis repudiandae, aut nemo corporis earum, repellat quam vitae, eius quaerat, sit! Odio sed voluptatem necessitatibus dolorem obcaecati, consectetur.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- end component: wide-card -->
+
+
+    </section>
+    <!-- end section: posts-preview -->
+
+
+
+    <!-- component: footer -->
+    <footer>
+            <p>Copyright © 2018 Sleep Coding</p>
+    </footer>
+    <!-- end component: footer -->
+
+  </body>
+</html>

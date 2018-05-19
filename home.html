@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Sleep Coding</title>
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Raleway:400,700" rel="stylesheet"> -->
+    <link rel="stylesheet" href="assets/app.css">
+  </head>
+  <body>
+
+    <!-- component: header -->
+    <header>
+      <div class="container clearfix">
+
+          <span class="toggle-menu" onClick="toggleMenu">
+              <button class="toggle-menu-btn active">Menu</button>
+              <i class="toggle-menu-icon fas fa-angle-down"></i>
+          </span>
+
+          <nav class={this.state.mobileMenu.displayClass} >
+              <a to="/" onClick="toggleMenu">home</a>
+              <a to="/blog" onClick="toggleMenu">blog</a>
+              <a to="/about" onClick="toggleMenu">about</a>
+          </nav>
+
+          <div class="social-media">
+              <a to="#"><i class="fab fa-facebook-f"></i></a>
+              <a to="#"><i class="fab fa-github"></i></a>
+              <a to="#"><i class="fab fa-instagram"></i></a>
+          </div>
+      </div>
+    </header>
+    <!-- end component: header -->
+
+
+    <!-- component: hero -->
+    <div class="hero">
+        <video autoPlay muted loop class="bg-media" id="myVideo">
+            <source src="assets/imgs/video.mp4" type="video/mp4"/>
+            <source src="assets/imgs/video.webm" type="video/webm"/>
+        </video>
+        <div class="overlay-absolute">
+            <div class="content" >
+                <h1 class="slogan">Hi, im a front-end developer <br/> with a back-end experience</h1>
+                <a class="btn" href="https://www.upwork.com/freelancers/~01d98adf66b01f0e59" target="_blank">hire me</a>
+            </div>
+        </div>
+    </div>
+    <!-- end component: hero -->
+
+
+    <!-- section: portfolio -->
+    <section class="section-portfolio">
+        <div class="container">
+
+            <div class="section-title-wrapper">
+                <h2 class="title">portfolio</h2>
+            </div>
+
+            <div class="card ">
+                <div class="image">
+                    <img src="assets/imgs/000cm.png" alt=""/>
+                </div>
+
+                <div class="preview-options">
+                    <a class="open-external-icon" href="" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <i class="lightbox-icon fas fa-search-plus"></i>
+                </div>
+
+                <div class="info">
+                    <div class="header">
+                        <div class="title">react app</div>
+                    </div>
+                    <div class="tags">
+                        <div class="tag tag-sass">sass</div>
+                        <div class="tag tag-js">js</div>
+                        <div class="tag tag-react">react</div>
+                        <div class="tag tag-react">react</div>
+                        <div class="tag tag-react">react</div>
+                        <div class="tag tag-wordpress">wordpress</div>
+                        <div class="tag tag-wordpress">wordpress</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card ">
+                <div class="image">
+                    <img src="assets/imgs/braun.png" alt=""/>
+                </div>
+
+                <div class="preview-options">
+                    <a class="open-external-icon" href="" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <i class="lightbox-icon fas fa-search-plus"></i>
+                </div>
+
+                <div class="info">
+                    <div class="header">
+                        <div class="title">python script</div>
+                    </div>
+                    <div class="tags">
+                        <div class="tag tag-sass">sass</div>
+                        <div class="tag tag-js">js</div>
+                        <div class="tag tag-react">react</div>
+                        <div class="tag tag-wordpress">wordpress</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card ">
+                <div class="image">
+                    <img src="assets/imgs/000cm.png" alt=""/>
+                </div>
+
+                <div class="preview-options">
+                    <a class="open-external-icon" href="" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <i class="lightbox-icon fas fa-search-plus"></i>
+                </div>
+
+                <div class="info">
+                    <div class="header">
+                        <div class="title">ui / ux</div>
+                    </div>
+                    <div class="tags">
+                        <div class="tag tag-sass">sass</div>
+                        <div class="tag tag-js">js</div>
+                        <div class="tag tag-react">react</div>
+                        <div class="tag tag-wordpress">wordpress</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card ">
+                <div class="image">
+                    <img src="assets/imgs/000cm.png" alt=""/>
+                </div>
+
+                <div class="preview-options">
+                    <a class="open-external-icon" href="" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <i class="lightbox-icon fas fa-search-plus"></i>
+                </div>
+
+                <div class="info">
+                    <div class="header">
+                        <div class="title">ui / ux</div>
+                    </div>
+                    <div class="tags">
+                        <div class="tag tag-sass">sass</div>
+                        <div class="tag tag-js">js</div>
+                        <div class="tag tag-react">react</div>
+                        <div class="tag tag-wordpress">wordpress</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card ">
+                <div class="image">
+                    <img src="assets/imgs/000cm.png" alt=""/>
+                </div>
+
+                <div class="preview-options">
+                    <a class="open-external-icon" href="" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <i class="lightbox-icon fas fa-search-plus"></i>
+                </div>
+
+                <div class="info">
+                    <div class="header">
+                        <div class="title">ui / ux</div>
+                    </div>
+                    <div class="tags">
+                        <div class="tag tag-sass">sass</div>
+                        <div class="tag tag-js">js</div>
+                        <div class="tag tag-react">react</div>
+                        <div class="tag tag-wordpress">wordpress</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card ">
+                <div class="image">
+                    <img src="assets/imgs/000cm.png" alt=""/>
+                </div>
+
+                <div class="preview-options">
+                    <a class="open-external-icon" href="" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <i class="lightbox-icon fas fa-search-plus"></i>
+                </div>
+
+                <div class="info">
+                    <div class="header">
+                        <div class="title">ui / ux</div>
+                    </div>
+                    <div class="tags">
+                        <div class="tag tag-sass">sass</div>
+                        <div class="tag tag-js">js</div>
+                        <div class="tag tag-react">react</div>
+                        <div class="tag tag-wordpress">wordpress</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- end section: portfolio -->
+
+
+    <!-- section: intro -->
+    <section class="intro-section">
+        <div class="container">
+            <div class="image">
+                <img src="assets/imgs/me.png" alt=""/>
+            </div>
+            <div class="text">
+                <h3>I have a thing for creating Modern, Clean and Interactive web apps.</h3>
+                <p>I will gladly use my skills to solve your problems in a reasonable time.</p>
+                <div class="name">- MAGED</div>
+            </div>
+        </div>
+    </section>
+    <!-- end section: intro -->
+
+
+    <!-- section: services -->
+    <section class="services-section ">
+        <div class="container">
+            <div class="section-title-wrapper">
+                <h2 class="title">services</h2>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-mobile"></i>
+                </div>
+                <h4 class="title">responsive design</h4>
+                <p class="describtion">
+                    Responsive design has grown from a preference to a necessity. We employ state-of-the-art responsive design technology to ensure an optimal viewing experience on all devices.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fab fa-css3"></i>
+                </div>
+                <h4 class="title">single page applications</h4>
+                <p class="describtion">
+                    Responsive design has grown ate-of-the-art responsive design technology to ensure an optimal viewing experience on all devices.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h4 class="title">wordpress</h4>
+                <p class="describtion">
+                    Responsive design has grown from a preference to a necessity.  responsive design technology to ensure an optimal viewing experience on all devices.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fab fa-react"></i>
+                </div>
+                <h4 class="title">single page applications</h4>
+                <p class="describtion">
+                    Responsive design has grown ate-of-the-art responsive design technology to ensure an optimal viewing experience on all devices.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fab fa-wordpress"></i>
+                </div>
+                <h4 class="title">wordpress</h4>
+                <p class="describtion">
+                    Responsive design has grown from a preference to a necessity.  responsive design technology to ensure an optimal viewing experience on all devices.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-database"></i>
+                </div>
+                <h4 class="title">responsive design</h4>
+                <p class="describtion">
+                    Responsive design has grown from a preference to a necessity. We employ state-of-the-art responsive design technology to ensure an optimal viewing experience on all devices.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- end section: services -->
+
+
+    <!-- section: hire-me -->
+    <section class="section-hire-me">
+        <div class="overlay">
+            <div class="section-title-wrapper">
+                <h2 class="title">let's work together</h2>
+            </div>
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint odit quisquam sapiente dicta ipsam dolores ducimus eaque voluptatibus provident velit cupiditate omnis deleniti, tempora commodi, hic sequi, a necessitatibus assumenda.</p>
+            <a class="btn" href="https://www.upwork.com/freelancers/~01d98adf66b01f0e59" target="_blank">hire me</a>
+        </div>
+    </section>
+    <!-- end section: hire-me -->
+
+
+
+    <!-- component: footer -->
+    <footer>
+            <p>Copyright © 2018 Sleep Coding</p>
+    </footer>
+    <!-- end component: footer -->
+
+
+  </body>
+</html>
