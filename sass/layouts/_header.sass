@@ -1,0 +1,83 @@
+header
+    background-color: #fff
+    color: #999
+    position: relative
+    z-index: 10
+    .container
+        padding: 1.5em
+
+    .toggle-menu
+        +mq($from: tablet)
+            display: none
+
+        .toggle-menu-btn
+            background-color: #fff
+            border: 0
+            outline: none
+        .toggle-menu-icon
+            font-size: 20px
+            margin-left: 5px
+            // margin-top: .4em
+            background: none
+            border: none
+            vertical-align: top
+
+
+    .active
+        color: $active-text-color
+
+
+    nav
+        position: absolute
+        display: none
+        transition: all .4s ease-in-out
+        +mq($from: tablet)
+            display: inline-block
+            // text-align: left
+
+        &.show-menu
+            +mq($until: tablet)
+                display: block
+                margin-left: -4em
+                margin-top: 1.5em
+                background-color: #fff
+                a
+                    display: block
+                    margin: auto
+                    padding: 15px 4em
+
+
+        a
+            font-size: 15px
+            text-decoration: none
+            text-transform: capitalize
+            margin: 0 75px 0 0
+            // display: none
+        //     +sm
+        //         margin: 0
+        //     +md
+        //         margin: 0 75px 0 0
+        //         display: inline-block
+        //         &:hover
+        //             color: $hover-text-color
+        //
+
+
+
+
+
+    .social-media
+        float: right
+        display: inline-block
+
+        +xs
+            // display: none
+        +sm
+            display: inline-block
+
+        a
+            margin: 0 0 0 30px
+            display: inline-block
+
+        i
+            font-size: 15px

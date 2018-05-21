@@ -1,0 +1,97 @@
+$logo-font:  'Kaushan Script'
+$font: 'Raleway'
+$hover-text-color: #C06C84
+$active-text-color: #C06C84
+$brand-text-color: #aa76bb
+$accent-text-color: #525252
+
+// #a08f68 , khaki , #dab23c , #eaba2c
+// #7f51ec
+// #E91E63  ,  #aa76bb  , #b589c3
+
+*
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body
+    margin: 0
+    font-size: 14px
+    font-family: $font
+    background-color: #eee
+    color: $accent-text-color
+
+a
+    color: inherit
+    text-decoration: none
+    &:hover, &:focus
+        color: $hover-text-color
+        text-decoration: none
+
+p
+    line-height: 25px
+    color: #404040
+
+h1
+    font-size: 2.8em
+    font-weight: 200
+    font-size: 2.4em
+
+
+
+
+
+ul , ol
+    line-height: 30px
+
+
+.vertical-align
+    +vertical-align
+
+
+.container
+    max-width: 90%
+    width: 1000px
+    padding-right: 15px
+    padding-left: 15px
+    margin-right: auto
+    margin-left: auto
+    +padding
+
+.clearfix
+    &::after
+        content: " "
+        clear: both
+        display: table
+
+.overlay
+    background: rgba(0, 0, 0, 0.5)
+    height: 100%
+
+.overlay-absolute
+    background: rgba(0, 0, 0, 0.5)
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+
+.section-title-wrapper
+    .title
+        margin: 0 auto 30px
+        display: inline-block
+        text-transform: capitalize
+        font-size: 25px
+        position: relative
+        &::before
+            content: ""
+            display: block
+            position: absolute
+            bottom: -3px
+            left: 0
+            width: 30px
+            height: 2px
+            background-color: #525252

@@ -1,10 +1,11 @@
 {
-  "name": "design2",
+  "name": "sleepcoding",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "sass": "sass --watch src/sass/app.sass:assets/app.css"
+    "start": "jekyll serve --livereload",
+    "build":"jekyll build --watch"
   },
   "keywords": [],
   "author": "",

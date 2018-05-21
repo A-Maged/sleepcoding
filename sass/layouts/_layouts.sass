@@ -1,0 +1,44 @@
+@import "header"
+@import "latest-posts"
+@import "popular-posts"
+@import "single-post"
+@import "footer"
+
+.logo-wrapper
+    text-align: center
+    margin: 65px auto
+    max-width: 500px
+    width: 90%
+    text-transform: capitalize
+    .logo
+        font-size: 4em
+        font-family: $logo-font
+        font-weight: 700
+        margin: 0 0 30px 0
+        color: $brand-text-color
+        +mq($until: tablet)
+            font-size: 3em
+    .slogan-wrapper
+        .horizontal-line
+            display: inline-block
+            border: 1px solid #444
+            width: 55px
+            height: 0
+        .slogan
+            display: inline-block
+            font-size: 20px
+            padding: 0 5px
+            margin: 0
+            vertical-align: middle
+            color: #333
+
+
+// .posts-container
+//     display: grid
+//
+//     +sm
+//         grid-template-columns: repeat(2, 1fr)
+//     +md
+//         grid-template-columns: repeat(3, 1fr)
+//     +lg
+//         grid-template-columns: repeat(4, 1fr)
