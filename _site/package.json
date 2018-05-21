@@ -1,0 +1,13 @@
+{
+  "name": "sleepcoding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "jekyll serve --livereload",
+    "build":"jekyll build --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
