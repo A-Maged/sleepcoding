@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "start": "jekyll serve --livereload",
-    "build":"jekyll build --watch"
+    "build": "jekyll build --watch"
   },
   "keywords": [],
   "author": "",

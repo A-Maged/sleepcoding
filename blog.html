@@ -5,53 +5,32 @@ layout: home-with-logo
 <!-- section: posts-preview -->
 <section class="posts-preview">
 
-    <!-- component: wide-card -->
-    <div class="post">
-        <div class="thumbnail">
-            <a href="#">
-                <img src="assets/imgs/1.jpg" alt="" />
-            </a>
-        </div>
+    {% for post in site.posts  %}
+        <!-- component: wide-card -->
+        <div class="post">
+            <div class="thumbnail">
+                <a href="{{ site.base }}{{ post.url }}">
+                    <img src="{{ site.base }}/{{ post.thumbnailUrl }}" alt="" />
+                </a>
+            </div>
 
-        <div class="details">
-            <div class="vertical-align">
-                <h4 class="title">
-                    <a href="#">
-                        laravel service container from scratch
-                    </a>
-                </h4>
-                <p class="excerpt">
-                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum tempora quo nobis repudiandae, aut nemo corporis earum, repellat quam vitae, eius quaerat, sit! Odio sed voluptatem necessitatibus dolorem obcaecati, consectetur.
-                </p>
+            <div class="details">
+                <div class="vertical-align">
+                    <h4 class="title">
+                        <a href="{{ site.base }}{{ post.url }}">
+                            {{ post.title }}
+                        </a>
+                    </h4>
+                    <p class="excerpt">
+                        {{ post.excerpt }}
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- end component: wide-card -->
+        <!-- end component: wide-card -->
+    {% endfor %}
 
 
-
-    <!-- component: wide-card -->
-    <div class="post">
-        <div class="thumbnail">
-            <a href="#">
-                <img src="assets/imgs/2.jpg" alt="" />
-            </a>
-        </div>
-
-        <div class="details">
-            <div class="vertical-align">
-                <h4 class="title">
-                    <a href="#">
-                        advanced oop concepts in php
-                    </a>
-                </h4>
-                <p class="excerpt">
-                     consectetur adipisicing elit. Illum tempora quo nobis repudiandae, aut nemo corporis earum, repellat quam vitae,Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum tempora quo nobis repudiandae, aut nemo corporis earum, repellat quam vitae, eius quaerat, sit! Odio sed voluptatem necessitatibus dolorem obcaecati, consectetur.
-                </p>
-            </div>
-        </div>
-    </div>
-    <!-- end component: wide-card -->
 
 
 </section>
