@@ -1549,6 +1549,12 @@ footer {
           .section-portfolio .card .info .tags .tag.tag-sass {
             background-color: pink;
             color: #fff; }
+          .section-portfolio .card .info .tags .tag.tag-css {
+            background-color: #396fe5;
+            color: #fff; }
+          .section-portfolio .card .info .tags .tag.tag-html {
+            background-color: #f2652f;
+            color: #fff; }
           .section-portfolio .card .info .tags .tag.tag-js {
             background-color: yellow; }
           .section-portfolio .card .info .tags .tag.tag-react {
