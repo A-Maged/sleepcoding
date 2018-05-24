@@ -7,8 +7,7 @@
     <title>Sleep Coding</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Raleway:400,700" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="https://a-maged.github.io/sleepcoding-blog/assets/main.css"> -->
-    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="http://127.0.0.1:4000/assets/css/main.css">
   </head>
   <body>
 
@@ -21,10 +20,10 @@
               <i class="toggle-menu-icon fas fa-angle-down"></i>
           </span>
 
-          <nav class={this.state.mobileMenu.displayClass} >
-              <a href="https://a-maged.github.io/sleepcoding-blog">home</a>
-              <a href="https://a-maged.github.io/sleepcoding-blog/blog">blog</a>
-              <a href="https://a-maged.github.io/sleepcoding-blog/about">about</a>
+          <nav>
+              <a href="http://127.0.0.1:4000">home</a>
+              <a href="http://127.0.0.1:4000/blog">blog</a>
+              <a href="http://127.0.0.1:4000/about">about</a>
           </nav>
 
           <div class="social-media">
@@ -40,8 +39,8 @@
 <!-- component: hero -->
 <div class="hero">
     <video autoPlay muted loop class="bg-media" id="myVideo">
-        <source src="assets/imgs/video.mp4" type="video/mp4"/>
-        <source src="assets/imgs/video.webm" type="video/webm"/>
+        <source src="http://127.0.0.1:4000/assets/imgs/video.mp4" type="video/mp4"/>
+        <source src="http://127.0.0.1:4000/assets/imgs/video.webm" type="video/webm"/>
     </video>
     <div class="overlay-absolute">
         <div class="content" >
@@ -61,7 +60,7 @@
             <h2 class="title">portfolio</h2>
         </div>
 
-        <div class="card ">
+        <div class="card" data-src="http://127.0.0.1:4000/assets/imgs/iptv-full.png" >
             <div class="image">
                 <img src="assets/imgs/iptv-mware.png" alt=""/>
             </div>
@@ -86,7 +85,7 @@
             </div>
         </div>
 
-        <div class="card ">
+        <div class="card" data-src="http://127.0.0.1:4000/assets/imgs/natour-full.png">
             <div class="image">
                 <img src="assets/imgs/natour.png" alt=""/>
             </div>
@@ -110,7 +109,7 @@
             </div>
         </div>
 
-        <div class="card ">
+        <div class="card" data-src="http://127.0.0.1:4000/assets/imgs/PSD-Portfolio-full.png">
             <div class="image">
                 <img src="assets/imgs/PSD-Portfolio.png" alt=""/>
             </div>
@@ -135,7 +134,7 @@
             </div>
         </div>
 
-        <div class="card ">
+        <div class="card" data-src="http://127.0.0.1:4000/assets/imgs/gettowork.png">
             <div class="image">
                 <img src="assets/imgs/gettowork.png" alt=""/>
             </div>
@@ -159,7 +158,7 @@
             </div>
         </div>
 
-        <div class="card ">
+        <div class="card" data-src="http://127.0.0.1:4000/assets/imgs/chat.png">
             <div class="image">
                 <img src="assets/imgs/chat-ui.png" alt=""/>
             </div>
@@ -183,7 +182,6 @@
                 </div>
             </div>
         </div>
-
 
     </div>
 </section>
@@ -219,7 +217,7 @@
             </div>
             <h4 class="title">responsive design</h4>
             <p class="describtion">
-                Responsive design has grown from a preference to a necessity. We employ state-of-the-art responsive design technology to ensure an optimal viewing experience on all devices.
+                With 65% of your website visitors using a mobile device, responsive sites are very important to anyone with a website!
             </p>
         </div>
 
@@ -229,7 +227,7 @@
             </div>
             <h4 class="title">single page applications</h4>
             <p class="describtion">
-                Responsive design has grown ate-of-the-art responsive design technology to ensure an optimal viewing experience on all devices.
+                Using React and Redux make your website very fast and avoida interruption of the user experience, just like a desktop application 
             </p>
         </div>
 
@@ -237,29 +235,30 @@
             <div class="icon">
                 <i class="fab fa-wordpress"></i>
             </div>
-            <h4 class="title">wordpress</h4>
+            <h4 class="title">wordpress websites</h4>
             <p class="describtion">
-                Responsive design has grown from a preference to a necessity.  responsive design technology to ensure an optimal viewing experience on all devices.
+                the top rated CMS in the industry. Make it easy for yourself to update your website's content. You can pretty much develop any kind of website using wordpress
             </p>
         </div>
 
         <div class="card">
             <div class="icon">
-                <i class="fab fa-react"></i>
+                <i class="fab fa-html5"></i>
             </div>
-            <h4 class="title">single page applications</h4>
+            <h4 class="title">design to html</h4>
             <p class="describtion">
-                Responsive design has grown ate-of-the-art responsive design technology to ensure an optimal viewing experience on all devices.
+                already have mockups ? i will convert your mockups into html5, css3 and javascript code and deliver you real web pages.
             </p>
         </div>
 
         <div class="card">
             <div class="icon">
-                <i class="fab fa-wordpress"></i>
+                <i class="fab fa-laravel"></i>
             </div>
-            <h4 class="title">wordpress</h4>
+            <h4 class="title">Laravel back-end</h4>
             <p class="describtion">
-                Responsive design has grown from a preference to a necessity.  responsive design technology to ensure an optimal viewing experience on all devices.
+                every app needs a back-end to make it powerfull and provide large value to your visitors. with a great framework like Laravel
+                you can develop fast, secure and maintainable apps
             </p>
         </div>
 
@@ -267,7 +266,7 @@
             <div class="icon">
                 <i class="fas fa-database"></i>
             </div>
-            <h4 class="title">responsive design</h4>
+            <h4 class="title">latest technologies</h4>
             <p class="describtion">
                 Responsive design has grown from a preference to a necessity. We employ state-of-the-art responsive design technology to ensure an optimal viewing experience on all devices.
             </p>
@@ -283,11 +282,29 @@
         <div class="section-title-wrapper">
             <h2 class="title">let's work together</h2>
         </div>
-        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint odit quisquam sapiente dicta ipsam dolores ducimus eaque voluptatibus provident velit cupiditate omnis deleniti, tempora commodi, hic sequi, a necessitatibus assumenda.</p>
+        <p class="text"> I work on Upwork <br/> the world's largest online workplace where savvy businesses <br/> and professional freelancers go to work</p>
         <a class="btn" href="https://www.upwork.com/freelancers/~01d98adf66b01f0e59" target="_blank">hire me</a>
     </div>
 </section>
 <!-- end section: hire-me -->
+
+
+
+<div class="modal-wrapper">
+    <div class="modal-content">
+        <div class="modal-header">
+            <!-- <h3 class="title">modal-header</h3> -->
+            <button class="close-modal" type="button">&times;</button>
+        </div>
+
+        <div class="modal-body">
+            <img src="" alt="">
+        </div>
+
+        <!-- <div class="modal-footer">footer</div> -->
+    </div>
+</div>
+
 
 
         <!-- component: footer -->
@@ -296,6 +313,7 @@
         </footer>
         <!-- end component: footer -->
 
+        <script src="http://127.0.0.1:4000/assets/js/app.js"></script>
     </body>
 </html>
 
