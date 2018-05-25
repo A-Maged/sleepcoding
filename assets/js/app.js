@@ -6,7 +6,7 @@
 /* Modal */
 (function(){
 
-    var pagesHasModal = ['/'];
+    var pagesHasModal = ['/', '/sleepcoding-blog/'];
     var page = window.location.pathname;
     if(!pagesHasModal.includes(page)){
         return;
