@@ -60,11 +60,10 @@
     })
 
 
-    window.addEventListener('click', function(e){
-        console.log(e.target);
-        if( e.target != toggleMenu && e.target.parentElement != toggleMenu ){
-            menu.classList.remove("show-menu");
-        }
-    });
+    // window.addEventListener('click', function(e){
+    //     if( e.target != toggleMenu && e.target.parentElement != toggleMenu ){
+    //         menu.classList.remove("show-menu");
+    //     }
+    // });
 
 })();
