@@ -1615,7 +1615,7 @@ footer {
         padding-left: 20px; } }
     .posts-preview .post .details .title {
       font-size: 20px;
-      margin: 0 0 10px;
+      margin: 10px 0;
       line-height: 25px; }
 
 .btn {

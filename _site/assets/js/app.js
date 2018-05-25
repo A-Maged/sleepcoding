@@ -10,13 +10,13 @@
     }
 
     var body = document.getElementsByTagName('body')[0];
-    var openModalBtnss = document.getElementsByClassName('lightbox-icon');
+    var openModalBtns = document.getElementsByClassName('lightbox-icon');
     var closeModalBtn = document.getElementsByClassName('close-modal')[0];
     var modal = document.getElementsByClassName('modal-wrapper')[0];
 
     // register open-buttons event
-    for (var i = 0; i < openModalBtnss.length; i++) {
-        openModalBtnss[i].addEventListener('click', openModal);
+    for (var i = 0; i < openModalBtns.length; i++) {
+        openModalBtns[i].addEventListener('click', openModal);
     }
 
     closeModalBtn.addEventListener('click', closeModal);
