@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "jekyll serve --livereload",
-    "build": "jekyll build --watch",
-    "dev": "concurrently \"npm run build\" \"npm run start\""
+    "dev": "jekyll serve --livereload"
   },
   "keywords": [],
   "author": "",
