@@ -1161,6 +1161,10 @@ hr {
 @media print {
   .hidden-print {
     display: none !important; } }
+.lb-prev, .lb-next {
+  display: block !important;
+  opacity: 1 !important; }
+
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1563,7 +1567,7 @@ footer {
             color: #fff; }
 
 .section-hire-me {
-  background-image: url(../imgs/000Upwork-Banner-620x413.jpg);
+  background-image: url(../images/000Upwork-Banner-620x413.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;

@@ -1,45 +1,46 @@
 'use strict';
 
 /* Modal */
-(function () {
-
-    var pagesHasModal = ['/', '/sleepcoding-blog/'];
-    var page = window.location.pathname;
-    if (!pagesHasModal.includes(page)) {
-        return;
-    }
-
-    var body = document.getElementsByTagName('body')[0];
-    var openModalBtns = document.getElementsByClassName('lightbox-icon');
-    var closeModalBtn = document.getElementsByClassName('close-modal')[0];
-    var modal = document.getElementsByClassName('modal-wrapper')[0];
-
-    // register open-buttons event
-    for (var i = 0; i < openModalBtns.length; i++) {
-        openModalBtns[i].addEventListener('click', openModal);
-    }
-
-    closeModalBtn.addEventListener('click', closeModal);
-
-    window.addEventListener('click', function (e) {
-        if (e.target == modal) {
-            closeModal();
-        }
-    });
-
-    function openModal(e) {
-        modal.style.display = 'block';
-        body.style.overflow = 'hidden';
-
-        var imageSrc = e.target.parentElement.parentElement.dataset.src;
-        document.querySelector('.modal-body img').src = imageSrc;
-    }
-
-    function closeModal() {
-        modal.style.display = 'none';
-        body.style.overflow = 'auto';
-    }
-})();
+// (function(){
+//
+//     var pagesHasModal = ['/', '/sleepcoding-blog/'];
+//     var page = window.location.pathname;
+//     if(!pagesHasModal.includes(page)){
+//         return;
+//     }
+//
+//     var body  = document.getElementsByTagName('body')[0];
+//     var openModalBtns  = document.getElementsByClassName('lightbox-icon');
+//     var closeModalBtn  = document.getElementsByClassName('close-modal')[0];
+//     var modal = document.getElementsByClassName('modal-wrapper')[0];
+//
+//     // register open-buttons event
+//     for(var i = 0; i < openModalBtns.length; i++ ){
+//         openModalBtns[i].addEventListener('click', openModal);
+//     }
+//
+//     closeModalBtn.addEventListener('click', closeModal);
+//
+//     window.addEventListener('click', function(e){
+//         if( e.target == modal){ closeModal(); }
+//     });
+//
+//     function openModal(e)
+//     {
+//         modal.style.display = 'block';
+//         body.style.overflow = 'hidden';
+//
+//         var imageSrc = e.target.parentElement.parentElement.dataset.src;
+//         document.querySelector('.modal-body img').src = imageSrc;
+//     }
+//
+//     function closeModal()
+//     {
+//         modal.style.display = 'none';
+//         body.style.overflow = 'auto';
+//     }
+//
+// })();
 
 /* toggle menu */
 (function () {
