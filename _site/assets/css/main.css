@@ -1361,7 +1361,6 @@ footer {
   padding: 10px 0;
   background-color: #555;
   text-align: center;
-  min-height: 300px;
   color: #fff;
   position: relative; }
   footer .footer-bottom {
@@ -1481,7 +1480,7 @@ footer {
       font-size: 20px;
       margin-bottom: 10px; }
     .services-section .card .describtion {
-      color: #fff;
+      color: #e4e4e4;
       line-height: 24px; }
 
 .section-portfolio {
