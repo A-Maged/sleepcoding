@@ -1385,7 +1385,8 @@ footer {
       float: left; }
     footer .footer-bottom .social-media {
       display: inline-block;
-      float: right; }
+      float: right;
+      padding-top: 4px; }
       footer .footer-bottom .social-media a {
         margin: 0 0 0 20px; }
 
@@ -1619,37 +1620,39 @@ footer {
 .about {
   background-color: #fff; }
 
-.posts-preview .post {
-  max-width: 750px;
-  width: 85%;
-  margin: 45px auto;
-  padding: 35px;
-  display: grid;
-  position: relative;
-  background-color: #fff;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
-  @media (max-width: 46.24em) {
-    .posts-preview .post {
-      box-shadow: none;
-      padding: 25px 25px; } }
-  @media (min-width: 46.25em) {
-    .posts-preview .post {
-      grid-template-columns: 1fr 2fr; } }
-  @media (min-width: 46.25em) {
-    .posts-preview .post .thumbnail {
-      width: 220px; } }
-  .posts-preview .post .thumbnail img {
-    width: 100%;
-    height: 100%; }
-  .posts-preview .post .details {
-    line-height: 20px; }
+.posts-preview {
+  margin-bottom: 90px; }
+  .posts-preview .post {
+    max-width: 750px;
+    width: 85%;
+    margin: 45px auto;
+    padding: 35px;
+    display: grid;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); }
+    @media (max-width: 46.24em) {
+      .posts-preview .post {
+        box-shadow: none;
+        padding: 25px 25px; } }
     @media (min-width: 46.25em) {
-      .posts-preview .post .details {
-        padding-left: 20px; } }
-    .posts-preview .post .details .title {
-      font-size: 20px;
-      margin: 10px 0;
-      line-height: 25px; }
+      .posts-preview .post {
+        grid-template-columns: 1fr 2fr; } }
+    @media (min-width: 46.25em) {
+      .posts-preview .post .thumbnail {
+        width: 220px; } }
+    .posts-preview .post .thumbnail img {
+      width: 100%;
+      height: 100%; }
+    .posts-preview .post .details {
+      line-height: 20px; }
+      @media (min-width: 46.25em) {
+        .posts-preview .post .details {
+          padding-left: 20px; } }
+      .posts-preview .post .details .title {
+        font-size: 20px;
+        margin: 10px 0;
+        line-height: 25px; }
 
 .btn {
   background-color: #fff;
