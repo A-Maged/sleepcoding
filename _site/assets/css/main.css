@@ -1352,7 +1352,8 @@ header {
           line-height: 20px; }
 
 .single-post {
-  background-color: #fff; }
+  background-color: #fff;
+  margin-bottom: 90px; }
   .single-post p {
     line-height: 29px;
     font-size: 17px; }
