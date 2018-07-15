@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "dev": "jekyll serve --livereload"
+    "dev": "bundle exec jekyll serve --livereload -H 0.0.0.0"
   },
   "keywords": [],
   "author": "",

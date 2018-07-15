@@ -1,5 +1,7 @@
 'use strict';
 
+
+
 /* Modal */
 // (function(){
 //
@@ -42,20 +44,24 @@
 //
 // })();
 
+
 /* toggle menu */
-(function () {
+(function(){
     var toggleMenu = document.querySelector('.toggle-menu');
     var menu = document.querySelector('nav');
 
-    Array.from(toggleMenu.children).forEach(function (item) {
-        item.addEventListener('click', function () {
+
+    Array.from(toggleMenu.children).forEach(function(item){
+        item.addEventListener('click', function(){
             menu.classList.toggle("show-menu");
         });
-    });
+    })
+
 
     // window.addEventListener('click', function(e){
     //     if( e.target != toggleMenu && e.target.parentElement != toggleMenu ){
     //         menu.classList.remove("show-menu");
     //     }
     // });
+
 })();
