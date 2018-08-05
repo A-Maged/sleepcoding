@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2018-08-05T03:58:52+02:00</updated><id>http://0.0.0.0:4000/</id><title type="html">SleepCoding</title><subtitle>a personal blog.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://0.0.0.0:4000/2018/05/21/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2018-05-21T10:03:36+02:00</published><updated>2018-05-21T10:03:36+02:00</updated><id>http://0.0.0.0:4000/2018/05/21/welcome-to-jekyll</id><content type="html" xml:base="http://0.0.0.0:4000/2018/05/21/welcome-to-jekyll.html">&lt;h1&gt;Aliases, and Contracts: Behind the Scenes&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.2">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2018-08-05T05:03:26+02:00</updated><id>http://0.0.0.0:4000/</id><title type="html">SleepCoding</title><subtitle>a personal blog.</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://0.0.0.0:4000/2018/05/21/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2018-05-21T10:03:36+02:00</published><updated>2018-05-21T10:03:36+02:00</updated><id>http://0.0.0.0:4000/2018/05/21/welcome-to-jekyll</id><content type="html" xml:base="http://0.0.0.0:4000/2018/05/21/welcome-to-jekyll.html">&lt;h1&gt;Aliases, and Contracts: Behind the Scenes&lt;/h1&gt;
 &lt;br&gt;
 &lt;h2&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;
@@ -78,44 +78,188 @@ The method signature for the HTTP kernel's handle method is quite simple: receiv
 Service providers are truly the key to bootstrapping a Laravel application. The application instance is created, the service providers are registered, and the request is handed to the bootstrapped application. It's really that simple!
 Having a firm grasp of how a Laravel application is built and bootstrapped via service providers is very valuable. Of course, your application's default service providers are stored in the  app/Providers directory.
 By default, the AppServiceProvider is fairly empty. This provider is a great place to add your application's own bootstrapping and service container bindings. Of course, for large applications, you may wish to create several service providers, each with a more granular type of bootstrapping.
-&lt;/p&gt;</content><author><name></name></author><summary type="html">When using any tool in the &quot;real world&quot;, you feel more confident if you understand how that tool works. Application development is no different. When you understand how your development tools function, you feel more comfortable</summary></entry><entry><title type="html">laravel impersonating users</title><link href="http://0.0.0.0:4000/2018/05/11/laravel-impersonating-users.html" rel="alternate" type="text/html" title="laravel impersonating users" /><published>2018-05-11T10:03:36+02:00</published><updated>2018-05-11T10:03:36+02:00</updated><id>http://0.0.0.0:4000/2018/05/11/laravel-impersonating-users</id><content type="html" xml:base="http://0.0.0.0:4000/2018/05/11/laravel-impersonating-users.html">&lt;h1&gt;Aliases, and Contracts: Behind the Scenes&lt;/h1&gt;
+&lt;/p&gt;</content><author><name></name></author><summary type="html">When using any tool in the &quot;real world&quot;, you feel more confident if you understand how that tool works. Application development is no different. When you understand how your development tools function, you feel more comfortable</summary></entry><entry><title type="html">laravel impersonating users</title><link href="http://0.0.0.0:4000/2018/05/11/laravel-impersonating-users.html" rel="alternate" type="text/html" title="laravel impersonating users" /><published>2018-05-11T10:03:36+02:00</published><updated>2018-05-11T10:03:36+02:00</updated><id>http://0.0.0.0:4000/2018/05/11/laravel-impersonating-users</id><content type="html" xml:base="http://0.0.0.0:4000/2018/05/11/laravel-impersonating-users.html">&lt;h1&gt;Impersonating Users In Laravel&lt;/h1&gt;
 &lt;br&gt;
-&lt;h2&gt;Introduction&lt;/h2&gt;
+
+&lt;!-- ************************************************ --&gt;
+
+&lt;h2&gt;Benifits&lt;/h2&gt;
+&lt;p&gt;here's a scenario for you to relize the importance of this feature in your app&lt;/p&gt;
 &lt;p&gt;
-When using any tool in the &quot;real world&quot;, you feel more confident if you understand how that tool works. Application development is no different. When you understand how your development tools function, you feel more comfortable and confident using them
-The goal of this document is to give you a good, high-level overview of how the Laravel framework works. By getting to know the overall framework better, everything feels less &quot;magical&quot; and you will be more confident building your applications. If you don't understand all of the terms right away, don't lose heart! Just try to get a basic grasp of what is going on, and your knowledge will grow as you explore other sections of the documentation.
+    some user is experincing a weird problem that you can't replicat with your
+    admin/developer account.
+    &lt;b&gt;what do you do?&lt;/b&gt;
 &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Lifecycle Overview&lt;/li&gt;
-&lt;li&gt;Focus On Service Providers&lt;/li&gt;
-&lt;li&gt;Console Kernels&lt;/li&gt;
-&lt;/ul&gt;
-&lt;ol&gt;
-&lt;li&gt;Lifecycle Overview&lt;/li&gt;
-&lt;li&gt;Focus On Service Providers&lt;/li&gt;
-&lt;li&gt;Console Kernels&lt;/li&gt;
-&lt;/ol&gt;
-&lt;br&gt;&lt;br&gt;
-&lt;h2&gt;Lifecycle Overview&lt;/h2&gt;
-&lt;br&gt;
-&lt;h3&gt;First Things&lt;/h3&gt;
-&lt;p&gt;
-The entry point for all requests to a Laravel application is the public/index.php file. All requests are directed to this file by your web server (Apache / Nginx) configuration. The  index.php file doesn't contain much code. Rather, it is a starting point for loading the rest of the framework.
-The index.php file loads the Composer generated autoloader definition, and then retrieves an instance of the Laravel application from bootstrap/app.php script. The first action taken by Laravel itself is to create an instance of the application / service container.
-&lt;/p&gt;
+&lt;p&gt;you pull out your secret weapon and you login as that user &lt;/p&gt;
+
+&lt;!-- ************************************************ --&gt;
 
 &lt;br&gt;
-&lt;h3&gt;HTTP / Console Kernels&lt;/h3&gt;
-&lt;p&gt;
-Next, the incoming request is sent to either the HTTP kernel or the console kernel, depending on the type of request that is entering the application. These two kernels serve as the central location that all requests flow through. For now, let's just focus on the HTTP kernel, which is located in app/Http/Kernel.php.
-The HTTP kernel extends the Illuminate\Foundation\Http\Kernel class, which defines an array of bootstrappers that will be run before the request is executed. These bootstrappers configure error handling, configure logging, detect the application environment, and perform other tasks that need to be done before the request is actually handled.
-The HTTP kernel also defines a list of HTTP middleware that all requests must pass through before being handled by the application. These middleware handle reading and writing the HTTP session, determining if the application is in maintenance mode, verifying the CSRF token, and more.
-The method signature for the HTTP kernel's handle method is quite simple: receive a  Request and return a Response. Think of the Kernel as being a big black box that represents your entire application. Feed it HTTP requests and it will return HTTP responses.
+&lt;br&gt;
+&lt;h2&gt;Five Steps To Implement User Impersonation in Laravel :&lt;/h2&gt;
+&lt;br&gt;
+
+&lt;!-- ************************************************ --&gt;
+
+&lt;br&gt;
+&lt;h3&gt;Step #1&lt;/h3&gt;
+&lt;br&gt;
+
+&lt;p&gt;- create a fresh laravel install
+    &lt;code&gt;
+        &lt;pre&gt;
+            &lt;b&gt;
+    $ laravel new test-impersonate
+            &lt;/b&gt;
+        &lt;/pre&gt;
+    &lt;/code&gt;
 &lt;/p&gt;
-&lt;br&gt;&lt;br&gt;
-&lt;h2&gt;Focus On Service Providers&lt;/h2&gt;
-&lt;p&gt;
-Service providers are truly the key to bootstrapping a Laravel application. The application instance is created, the service providers are registered, and the request is handed to the bootstrapped application. It's really that simple!
-Having a firm grasp of how a Laravel application is built and bootstrapped via service providers is very valuable. Of course, your application's default service providers are stored in the  app/Providers directory.
-By default, the AppServiceProvider is fairly empty. This provider is a great place to add your application's own bootstrapping and service container bindings. Of course, for large applications, you may wish to create several service providers, each with a more granular type of bootstrapping.
-&lt;/p&gt;</content><author><name></name></author><summary type="html">When using any tool in the &quot;real world&quot;, you feel more confident if you understand how that tool works. Application development is no different. When you understand how your development tools function, you feel more comfortable</summary></entry></feed>
+
+
+&lt;p&gt;- Scaffold Basic Authintication
+    &lt;code&gt;
+        &lt;pre&gt;
+            &lt;b&gt;
+    $ php artisan make:auth
+            &lt;/b&gt;
+        &lt;/pre&gt;
+    &lt;/code&gt;
+&lt;/p&gt;    
+
+&lt;!-- ************************************************ --&gt;
+
+&lt;br&gt;
+&lt;hr&gt;
+&lt;h3&gt;Step #2&lt;/h3&gt;
+&lt;br&gt;
+
+
+&lt;p&gt;- setup db
+    &lt;code&gt;
+        &lt;b&gt;
+            &lt;pre&gt;
+    mysql&gt; create database impersonat_test;
+    mysql&gt; show databases;
+            &lt;/pre&gt;
+        &lt;/b&gt;
+    &lt;/code&gt;
+&lt;/p&gt;
+
+&lt;p&gt;- in .env file change: 
+    &lt;pre&gt;
+    &lt;b&gt;DB_DATABASE&lt;/b&gt; to &lt;b&gt;impersonat_test&lt;/b&gt; (which is the db we created earlier)
+    &lt;b&gt;DB_USERNAME&lt;/b&gt; and &lt;b&gt;DB_PASSWORD&lt;/b&gt;
+    &lt;/pre&gt;
+&lt;/p&gt;
+
+
+&lt;p&gt;- in database/migration open up the create_users_table.php and after the password feild add this
+    &lt;pre&gt;
+    &lt;b&gt;$table-&gt;string('type')-&gt;nullable;&lt;/b&gt;
+    &lt;/pre&gt;
+&lt;/p&gt;
+
+
+&lt;p&gt;- tell laravel create the tables specified in the migration files
+    &lt;pre&gt;
+    &lt;b&gt;$ php artisan migrate&lt;/b&gt;
+    &lt;/pre&gt;
+&lt;/p&gt;
+
+
+&lt;p&gt;- to confirm they're created
+    &lt;b&gt;
+        &lt;pre&gt;
+    mysql&gt; use impersonat_test;
+    mysql&gt; show tables;
+    mysql&gt; describe users;
+        &lt;/pre&gt;
+    &lt;/b&gt;
+&lt;/p&gt;
+
+&lt;!-- ************************************************ --&gt;
+
+&lt;br&gt;
+&lt;hr&gt;
+&lt;h3&gt;Step #3&lt;/h3&gt;
+&lt;br&gt;
+
+
+&lt;p&gt;- seeding: create an admin and a regular user
+    &lt;b&gt;
+        &lt;pre&gt;
+    $ php artisan make:seeder UsersTableSeeder
+        &lt;/pre&gt;
+    &lt;/b&gt;
+&lt;/p&gt;
+
+&lt;p&gt;- open up database/factories and you'll find a user factory ready for you &lt;/p&gt;
+&lt;p&gt; then lets make sure to make all users have the same password for testing purpesos
+    &lt;b&gt;
+        &lt;pre&gt;
+    $factory-&gt;defineAs(App\User::class, 'admin', function (Faker $faker) {
+        return [
+            'name' =&gt; $faker-&gt;name,
+            'email' =&gt; $faker-&gt;unique()-&gt;safeEmail,
+            'password' =&gt; Hash::make('cm'), // secret
+            'type' =&gt; 'admin',
+            'remember_token' =&gt; str_random(10),
+        ];
+    });
+    $factory-&gt;defineAs(App\User::class, 'user', function (Faker $faker) {
+        return [
+            'name' =&gt; $faker-&gt;name,
+            'email' =&gt; $faker-&gt;unique()-&gt;safeEmail,
+            'password' =&gt; Hash::make('cm'), // secret
+            'type' =&gt; 'user',
+            'remember_token' =&gt; str_random(10),
+        ];
+    });
+        &lt;/pre&gt;
+    &lt;/b&gt;
+&lt;/p&gt;
+
+
+&lt;p&gt;- to use the factories we just created go in the database/seeds/UsersTableSeeder.php inside the run method write the following
+    &lt;b&gt;
+        &lt;pre&gt;
+    factory(\App\User::class, 'admin')-&gt;create();
+    factory(\App\User::class, 'user', 3)-&gt;create();
+        &lt;/pre&gt;
+    &lt;/b&gt;    
+&lt;/p&gt;
+
+&lt;p&gt;- in database/seeds/DatabaseSeeder.php make sure to call your seeder table
+    &lt;b&gt;
+        &lt;pre&gt;
+    $this-&gt;call(UsersTableSeeder::class);
+        &lt;/pre&gt;
+    &lt;/b&gt;
+&lt;/p&gt;
+
+
+&lt;p&gt;- run the following command to actually seed the db and create the admin and the regular user
+    &lt;b&gt;
+        &lt;pre&gt;
+    $ php artisan db:seed
+        &lt;/pre&gt;
+    &lt;/b&gt;
+&lt;/p&gt;
+
+&lt;p&gt;- lets confirm  it created two users with different types
+    &lt;b&gt;
+        &lt;pre&gt;
+    mysql&gt; use impersonat_test;
+    mysql&gt; select * from users;
+        &lt;/pre&gt;
+    &lt;/b&gt;
+&lt;/p&gt;
+
+&lt;p&gt;now we can succesfully sign in.&lt;/p&gt;
+
+&lt;!-- ************************************************ --&gt;
+
+&lt;br&gt;
+&lt;hr&gt;
+&lt;h3&gt;Step #4&lt;/h3&gt;
+&lt;br&gt;</content><author><name></name></author><summary type="html">When using any tool in the &quot;real world&quot;, you feel more confident if you understand how that tool works. Application development is no different. When you understand how your development tools function, you feel more comfortable</summary></entry></feed>
