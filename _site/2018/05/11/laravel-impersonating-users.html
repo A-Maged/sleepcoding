@@ -236,7 +236,77 @@
 <br>
 
 
+<p>- lets create a route that will take a user_id and log us in with that user
+    <b>
+        <pre>
+    Route::get('/admin/impersonate/{user}', 'AdminController@impersonate')->name('admin.impersonate');
+        </pre>
+    </b>
+</p>
 
+
+<p>- now we'll make a controller for the admin to handle the impersonation
+    <b>
+        <pre>
+    $ php artisan make:controller AdminController
+        </pre>
+    </b>
+</p>
+
+
+<p>navigate to <b>App\Http\Controllers\AdminController.php</b> and add a method called impersonate</p>
+<p>- first we'll pull in the Auth facade, we'll need it to login
+    <b>
+        <pre>
+    use Illuminate\Support\Facades\Auth;
+        </pre>
+    </b>
+</p>
+
+
+<p>- define the auth middleware in the constructor to protect all routes using this controller
+    <b>
+        <pre>
+    public function __construct(){
+        $this->middleware('auth');
+    }
+        </pre>
+    </b>
+</p>
+
+<p>- this is the most important peice that will actually impersonate the user
+    <b>
+        <pre>
+    public function impersonate(\App\User $user){
+        Auth::login($user);
+        return redirect('/home');
+    }
+        </pre>
+    </b>
+</p>
+
+<!-- ************************************************ -->
+
+<br>
+<hr>
+<h3>Step #5</h3>
+<br>
+
+<p>now we need to make sure that only admins can login as other users , here comes the "gates"</p>
+<p>- we'll modify our impersonate method to be like this
+    <b>
+        <pre>
+    public function impersonate(\App\User $user){
+        if (Auth::user()->type != 'admin') {
+            return response('forbidden', 403);
+        }
+        Auth::login($user);
+        return redirect('/home');
+    }
+        </pre>
+    </b>
+    it checks if the currently authinticated user is of type admin
+</p>
 
 </div>
 
