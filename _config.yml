@@ -17,6 +17,10 @@
 base: https://a-maged.github.io/sleepcoding
 # base: http://127.0.0.1:4000
 
+minify_html: true
+
+
+
 title: SleepCoding
 description: >- # this means to ignore newlines until "baseurl:"
     a personal blog.

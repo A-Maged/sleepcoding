@@ -1,173 +1,20 @@
-
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Sleep Coding</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Raleway:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://a-maged.github.io/sleepcoding/assets/css/lightbox.min.css">
-    <link rel="stylesheet" href="https://a-maged.github.io/sleepcoding/assets/css/main.css">
-  </head>
-  <body>
-
-    <!-- component: header -->
-    <header>
-      <div class="container clearfix">
-
-          <span class="toggle-menu">
-              <button class="toggle-menu-btn active">Menu</button>
-              <i class="toggle-menu-icon fas fa-angle-down"></i>
-          </span>
-
-          <nav>
-              <a href="https://a-maged.github.io/sleepcoding">home</a>
-              <a href="https://a-maged.github.io/sleepcoding/blog">blog</a>
-              <!-- <a href="https://a-maged.github.io/sleepcoding/about">about</a> -->
-          </nav>
-
-          <div class="social-media">
-              <a href="https://github.com/A-Maged?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
-              <a href="https://www.instagram.com/abd.elrahman_maged/" target="_blank"><i class="fab fa-instagram"></i></a>
-              <a href="https://www.facebook.com/cmaged451" target="_blank"><i class="fab fa-facebook-f"></i></a>
-          </div>
-      </div>
-    </header>
-    <!-- end component: header -->
-
-
-<!-- component: logo -->
-<div class="logo-wrapper">
-    <h1 class="logo">sleep coding.</h1>
-    <div class="slogan-wrapper">
-        <span class="horizontal-line"></span>
-        <p class="slogan">learn by doing</p>
-        <span class="horizontal-line"></span>
-    </div>
-</div>
-<!-- end component: logo -->
-
-<div class="container single-post">
-    <h1>Impersonating Users In Laravel</h1>
-<br>
-
-<!-- ************************************************ -->
-
-<h2>Benifits</h2>
-<p>here's a scenario for you to relize the importance of this feature in your app</p>
-<p>
-    some user is experincing a weird problem that you can't replicat with your
-    admin/developer account.
-    <b>what do you do?</b>
-</p>
-<p>you pull out your secret weapon and you login as that user </p>
-
-<!-- ************************************************ -->
-
-<br>
-<br>
-<h2>Five Steps To Implement User Impersonation in Laravel :</h2>
-<br>
-
-<!-- ************************************************ -->
-
-<br>
-<h3>Step #1</h3>
-<br>
-
-<p>- create a fresh laravel install
-    <code>
-        <pre>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><title>Sleep Coding</title><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous"><link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Raleway:400,700" rel="stylesheet"><link rel="stylesheet" href="https://a-maged.github.io/sleepcoding/assets/css/lightbox.min.css"><link rel="stylesheet" href="https://a-maged.github.io/sleepcoding/assets/css/main.css"></head><body> <header><div class="container clearfix"><span class="toggle-menu"> <button class="toggle-menu-btn active">Menu</button> <i class="toggle-menu-icon fas fa-angle-down"></i> </span><nav> <a href="https://a-maged.github.io/sleepcoding">home</a> <a href="https://a-maged.github.io/sleepcoding/blog">blog</a> </nav><div class="social-media"> <a href="https://github.com/A-Maged?tab=repositories" target="_blank"><i class="fab fa-github"></i></a> <a href="https://www.instagram.com/abd.elrahman_maged/" target="_blank"><i class="fab fa-instagram"></i></a> <a href="https://www.facebook.com/cmaged451" target="_blank"><i class="fab fa-facebook-f"></i></a></div></div> </header><div class="logo-wrapper"><h1 class="logo">sleep coding.</h1><div class="slogan-wrapper"> <span class="horizontal-line"></span><p class="slogan">learn by doing</p> <span class="horizontal-line"></span></div></div><div class="container single-post"><h1>Impersonating Users In Laravel</h1> <br><h2>Benifits</h2><p>here's a scenario for you to relize the importance of this feature in your app</p><p> some user is experincing a weird problem that you can't replicat with your admin/developer account. <b>what do you do?</b></p><p>you pull out your secret weapon and you login as that user</p><br> <br><h2>Five Steps To Implement User Impersonation in Laravel :</h2> <br><br><h3>Step #1</h3> <br><p>- create a fresh laravel install <code> <pre>
             <b>
     $ laravel new test-impersonate
-            </b>
-        </pre>
-    </code>
-</p>
-
-
-<p>- Scaffold Basic Authintication
-    <code>
-        <pre>
+            </b></pre></code></p><p>- Scaffold Basic Authintication <code> <pre>
             <b>
     $ php artisan make:auth
-            </b>
-        </pre>
-    </code>
-</p>    
-
-<!-- ************************************************ -->
-
-<br>
-<hr>
-<h3>Step #2</h3>
-<br>
-
-
-<p>- setup db
-    <code>
-        <b>
-            <pre>
+            </b></pre></code></p><br><hr><h3>Step #2</h3> <br><p>- setup db <code> <b> <pre>
     mysql> create database impersonat_test;
-    mysql> show databases;
-            </pre>
-        </b>
-    </code>
-</p>
-
-<p>- in .env file change: 
-    <pre>
+    mysql> show databases;</pre></b> </code></p><p>- in .env file change: <pre>
     <b>DB_DATABASE</b> to <b>impersonat_test</b> (which is the db we created earlier)
-    <b>DB_USERNAME</b> and <b>DB_PASSWORD</b>
-    </pre>
-</p>
-
-
-<p>- in database/migration open up the create_users_table.php and after the password feild add this
-    <pre>
-    <b>$table->string('type')->nullable;</b>
-    </pre>
-</p>
-
-
-<p>- tell laravel create the tables specified in the migration files
-    <pre>
-    <b>$ php artisan migrate</b>
-    </pre>
-</p>
-
-
-<p>- to confirm they're created
-    <b>
-        <pre>
+    <b>DB_USERNAME</b> and <b>DB_PASSWORD</b></pre></p><p>- in database/migration open up the create_users_table.php and after the password feild add this <pre>
+    <b>$table->string('type')->nullable;</b></pre></p><p>- tell laravel create the tables specified in the migration files <pre>
+    <b>$ php artisan migrate</b></pre></p><p>- to confirm they're created <b> <pre>
     mysql> use impersonat_test;
     mysql> show tables;
-    mysql> describe users;
-        </pre>
-    </b>
-</p>
-
-<!-- ************************************************ -->
-
-<br>
-<hr>
-<h3>Step #3</h3>
-<br>
-
-
-<p>- seeding: create an admin and a regular user
-    <b>
-        <pre>
-    $ php artisan make:seeder UsersTableSeeder
-        </pre>
-    </b>
-</p>
-
-<p>- open up database/factories and you'll find a user factory ready for you </p>
-<p> then lets make sure to make all users have the same password for testing purpesos
-    <b>
-        <pre>
+    mysql> describe users;</pre></b></p><br><hr><h3>Step #3</h3> <br><p>- seeding: create an admin and a regular user <b> <pre>
+    $ php artisan make:seeder UsersTableSeeder</pre></b></p><p>- open up database/factories and you'll find a user factory ready for you</p><p> then lets make sure to make all users have the same password for testing purpesos <b> <pre>
     $factory->defineAs(App\User::class, 'admin', function (Faker $faker) {
         return [
             'name' => $faker->name,
@@ -185,149 +32,27 @@
             'type' => 'user',
             'remember_token' => str_random(10),
         ];
-    });
-        </pre>
-    </b>
-</p>
-
-
-<p>- to use the factories we just created go in the database/seeds/UsersTableSeeder.php inside the run method write the following
-    <b>
-        <pre>
+    });</pre></b></p><p>- to use the factories we just created go in the database/seeds/UsersTableSeeder.php inside the run method write the following <b> <pre>
     factory(\App\User::class, 'admin')->create();
-    factory(\App\User::class, 'user', 3)->create();
-        </pre>
-    </b>    
-</p>
-
-<p>- in database/seeds/DatabaseSeeder.php make sure to call your seeder table
-    <b>
-        <pre>
-    $this->call(UsersTableSeeder::class);
-        </pre>
-    </b>
-</p>
-
-
-<p>- run the following command to actually seed the db and create the admin and the regular user
-    <b>
-        <pre>
-    $ php artisan db:seed
-        </pre>
-    </b>
-</p>
-
-<p>- lets confirm  it created two users with different types
-    <b>
-        <pre>
+    factory(\App\User::class, 'user', 3)->create();</pre></b></p><p>- in database/seeds/DatabaseSeeder.php make sure to call your seeder table <b> <pre>
+    $this->call(UsersTableSeeder::class);</pre></b></p><p>- run the following command to actually seed the db and create the admin and the regular user <b> <pre>
+    $ php artisan db:seed</pre></b></p><p>- lets confirm it created two users with different types <b> <pre>
     mysql> use impersonat_test;
-    mysql> select * from users;
-        </pre>
-    </b>
-</p>
-
-<p>now we can succesfully sign in.</p>
-
-<!-- ************************************************ -->
-
-<br>
-<hr>
-<h3>Step #4</h3>
-<br>
-
-
-<p>- lets create a route that will take a user_id and log us in with that user
-    <b>
-        <pre>
-    Route::get('/admin/impersonate/{user}', 'AdminController@impersonate')->name('admin.impersonate');
-        </pre>
-    </b>
-</p>
-
-
-<p>- now we'll make a controller for the admin to handle the impersonation
-    <b>
-        <pre>
-    $ php artisan make:controller AdminController
-        </pre>
-    </b>
-</p>
-
-
-<p>navigate to <b>App\Http\Controllers\AdminController.php</b> and add a method called impersonate</p>
-<p>- first we'll pull in the Auth facade, we'll need it to login
-    <b>
-        <pre>
-    use Illuminate\Support\Facades\Auth;
-        </pre>
-    </b>
-</p>
-
-
-<p>- define the auth middleware in the constructor to protect all routes using this controller
-    <b>
-        <pre>
+    mysql> select * from users;</pre></b></p><p>now we can succesfully sign in.</p><br><hr><h3>Step #4</h3> <br><p>- lets create a route that will take a user_id and log us in with that user <b> <pre>
+    Route::get('/admin/impersonate/{user}', 'AdminController@impersonate')->name('admin.impersonate');</pre></b></p><p>- now we'll make a controller for the admin to handle the impersonation <b> <pre>
+    $ php artisan make:controller AdminController</pre></b></p><p>navigate to <b>App\Http\Controllers\AdminController.php</b> and add a method called impersonate</p><p>- first we'll pull in the Auth facade, we'll need it to login <b> <pre>
+    use Illuminate\Support\Facades\Auth;</pre></b></p><p>- define the auth middleware in the constructor to protect all routes using this controller <b> <pre>
     public function __construct(){
         $this->middleware('auth');
-    }
-        </pre>
-    </b>
-</p>
-
-<p>- this is the most important peice that will actually impersonate the user
-    <b>
-        <pre>
+    }</pre></b></p><p>- this is the most important peice that will actually impersonate the user <b> <pre>
     public function impersonate(\App\User $user){
         Auth::login($user);
         return redirect('/home');
-    }
-        </pre>
-    </b>
-</p>
-
-<!-- ************************************************ -->
-
-<br>
-<hr>
-<h3>Step #5</h3>
-<br>
-
-<p>now we need to make sure that only admins can login as other users , here comes the "gates"</p>
-<p>- we'll modify our impersonate method to be like this
-    <b>
-        <pre>
+    }</pre></b></p><br><hr><h3>Step #5</h3> <br><p>now we need to make sure that only admins can login as other users , here comes the "gates"</p><p>- we'll modify our impersonate method to be like this <b> <pre>
     public function impersonate(\App\User $user){
         if (Auth::user()->type != 'admin') {
             return response('forbidden', 403);
         }
         Auth::login($user);
         return redirect('/home');
-    }
-        </pre>
-    </b>
-    it checks if the currently authinticated user is of type admin
-</p>
-
-</div>
-
-        <!-- component: footer -->
-        <footer>
-            <div class="footer-bottom">
-                <div class="container">
-                    <p>Copyright © 2018 Sleep Coding</p>
-                    <div class="social-media">
-                        <a href="https://github.com/A-Maged?tab=repositories"><i class="fab fa-github"></i></a>
-                        <a href="https://www.instagram.com/abd.elrahman_maged/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/cmaged451"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- end component: footer -->
-
-        <script src="https://a-maged.github.io/sleepcoding/assets/js/jquery-3.3.1.min.js"></script>
-        <script src="https://a-maged.github.io/sleepcoding/assets/js/lightbox.min.js"></script>
-        <script src="https://a-maged.github.io/sleepcoding/assets/js/app.js"></script>
-    </body>
-</html>
-
+    }</pre></b> it checks if the currently authinticated user is of type admin</p></div> <footer><div class="footer-bottom"><div class="container"><p>Copyright © 2018 Sleep Coding</p><div class="social-media"> <a href="https://github.com/A-Maged?tab=repositories"><i class="fab fa-github"></i></a> <a href="https://www.instagram.com/abd.elrahman_maged/"><i class="fab fa-instagram"></i></a> <a href="https://www.facebook.com/cmaged451"><i class="fab fa-facebook-f"></i></a></div></div></div> </footer><script src="https://a-maged.github.io/sleepcoding/assets/js/jquery-3.3.1.min.js"></script><script src="https://a-maged.github.io/sleepcoding/assets/js/lightbox.min.js"></script><script src="https://a-maged.github.io/sleepcoding/assets/js/app.js"></script></body></html>
