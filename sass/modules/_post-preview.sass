@@ -4,19 +4,27 @@
     // padding: 50px 0
     margin-bottom: 90px
     .post
+        display: grid
         max-width: 750px
         width: 85%
         margin: 45px auto
         padding: 35px
-        display: grid
         position: relative
         background-color: #fff
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
+        cursor: default
+        box-shadow: 0 10px 28px rgba(0,0,0,0.25), 0 5px 10px rgba(0,0,0,0.22)
+        transition: all 300ms
+        transform: translateY(-5px)
+
         +mq($until: tablet)
             box-shadow: none
             padding: 25px 25px
         +mq($from: tablet)
             grid-template-columns: 1fr 2fr
+        
+        &:hover
+            box-shadow: none
+            transform: translateY(0)
 
         .thumbnail
             +mq($from: tablet)
