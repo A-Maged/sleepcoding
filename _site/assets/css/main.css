@@ -1420,8 +1420,6 @@ footer {
   padding: 25px 0;
   background-color: #fff;
   text-align: center; }
-  .intro-section:hover .image {
-    opacity: 0.5; }
   .intro-section .text {
     display: inline-block;
     vertical-align: middle;
@@ -1677,23 +1675,28 @@ footer {
   min-height: 390px;
   overflow: hidden;
   color: #fff !important;
-  background: url(../images/pexels-photo-109243.jpeg) no-repeat top; }
+  background: url(../images/pexels-photo-196658.jpeg) no-repeat;
+  background-position-y: -450px;
+  background-size: cover; }
   .hero .bg-media {
     position: absolute;
     top: 0;
     left: 0;
     min-width: 100%;
     min-height: 100%; }
+  .hero .overlay-absolute {
+    background: rgba(0, 0, 0, 0.6); }
   .hero .content {
     text-align: center;
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    top: 55%; }
     .hero .content .slogan {
       padding: 0 10px;
-      margin-bottom: 40px;
+      margin-bottom: 50px;
       margin-top: 0; }
 
 .modal-wrapper {
