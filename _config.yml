@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-base: https://a-maged.github.io/sleepcoding
+base: https://a-maged.github.io/sleepcoding-blog
 # base: http://127.0.0.1:4000
 
 minify_html: true
