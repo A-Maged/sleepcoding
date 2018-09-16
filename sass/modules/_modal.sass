@@ -1,57 +1,121 @@
-
 .modal-wrapper
-    display: none
-    position: fixed
-    top: 0
-    left: 0
-    width: 100vw
-    height: 100vh
-    background-color: rgba(0, 0, 0, 0.5)
-    z-index: 10
-    overflow: scroll
-    .modal-content
-        position: absolute
-        top: 50%
-        left: 50%
-        transform: translate(-50%, -50%)
-        background-color: #fff
-        max-width: 100%
-        max-height: 93%
-        overflow: scroll
-        overflow-x: hidden
-        box-shadow: 0px 0px 20px 7px rgba(0,0,0,0.30)
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	background: rgba(0,0,0,.5)
+	display: none
+	opacity: 0
+	transition: all .2s
+
+	&.show-modal
+		display: block
+		opacity: 1
 
 
-        .modal-header
-            // padding: 10px 0
-            .title
-                /* float: left */
-                display: inline-block
-                margin: 0
-            .close-modal
-                // float: right
-                position: absolute
-                top: 15px
-                right: 15px
-                display: inline-block
-                cursor: pointer
-                width: 25px
-                height: 25px
-                font-size: 28px
-                line-height: 0
-                background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D)
-                color: #fff
-                padding: 0
-                border: none
+	.modal-content
+		background-color: #fff
+		max-width: 400px
+		margin: 40px auto 0
+		color: #777	
 
-        .modal-body
-            img
-                width: 100%
-                height: 100%
-        .modal-footer
-            position: absolute
-            bottom: 0
-            left: 0
-            padding: 10px 0
-            text-align: center
-            width: 100%
+		.modal-header
+			padding: 20px 15px 
+			border-bottom: 1px solid #ccc
+			color: #fff
+			background: #555
+			h2
+				display: inline-block
+				text-transform: capitalize
+				font-weight: normal
+			i 
+				float: right
+				font-size: 20px
+				margin-top: 7px
+				cursor: pointer
+
+		.modal-body
+			padding: 15px
+			
+			.form-group
+				width: 100%
+				margin: 0 0 20px
+				input, textarea
+					width: 100%
+					padding: 10px
+				&__title
+					text-transform: capitalize
+					margin-bottom: 5px
+			
+			button
+				border: none
+				padding: 18px 25px
+				font-size: 19px
+				text-transform: uppercase
+				background: #555
+				color: #fff
+				transition: all .2s
+				&:hover
+					color: #444
+					background: #eee
+				
+
+
+	
+// .modal-wrapper
+//     display: none
+//     position: fixed
+//     top: 0
+//     left: 0
+//     width: 100vw
+//     height: 100vh
+//     background-color: rgba(0, 0, 0, 0.5)
+//     z-index: 10
+//     overflow: scroll
+//     .modal-content
+//         position: absolute
+//         top: 50%
+//         left: 50%
+//         transform: translate(-50%, -50%)
+//         background-color: #fff
+//         max-width: 100%
+//         max-height: 93%
+//         overflow: scroll
+//         overflow-x: hidden
+//         box-shadow: 0px 0px 20px 7px rgba(0,0,0,0.30)
+
+
+//         .modal-header
+//             // padding: 10px 0
+//             .title
+//                 /* float: left */
+//                 display: inline-block
+//                 margin: 0
+//             .close-modal
+//                 // float: right
+//                 position: absolute
+//                 top: 15px
+//                 right: 15px
+//                 display: inline-block
+//                 cursor: pointer
+//                 width: 25px
+//                 height: 25px
+//                 font-size: 28px
+//                 line-height: 0
+//                 background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D)
+//                 color: #fff
+//                 padding: 0
+//                 border: none
+
+//         .modal-body
+//             img
+//                 width: 100%
+//                 height: 100%
+//         .modal-footer
+//             position: absolute
+//             bottom: 0
+//             left: 0
+//             padding: 10px 0
+//             text-align: center
+//             width: 100%

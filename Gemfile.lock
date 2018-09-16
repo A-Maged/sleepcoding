@@ -116,6 +116,7 @@ DEPENDENCIES
   jekyll-babel
   jekyll-compress-images
   jekyll-feed (~> 0.6)
+  jekyll-watch
   minima (~> 2.0)
   octopress-minify-html
   tzinfo-data

@@ -1,12 +1,12 @@
 {
-  "name": "sleepcoding",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.html",
-  "scripts": {
-    "dev": "bundle exec jekyll serve --livereload -H 0.0.0.0"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+	"name": "sleepcoding",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.html",
+	"scripts": {
+		"dev": "bundle exec jekyll serve --livereload -H 0.0.0.0"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
 }

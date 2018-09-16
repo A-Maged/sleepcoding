@@ -1,20 +1,53 @@
-        <!-- component: footer -->
-        <footer>
-            <div class="footer-bottom">
-                <div class="container">
-                    <p>Copyright © 2018 Sleep Coding</p>
-                    <div class="social-media">
-                        <a href="https://github.com/A-Maged?tab=repositories"><i class="fab fa-github"></i></a>
-                        <a href="https://www.instagram.com/abd.elrahman_maged/"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.facebook.com/cmaged451"><i class="fab fa-facebook-f"></i></a>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- end component: footer -->
+<!-- component: footer -->
+<footer>
+	<div class="footer-bottom">
+		<div class="container">
+			<p>Copyright © 2018 Sleep Coding</p>
+			<div class="social-media">
+				<a href="https://github.com/A-Maged?tab=repositories"><i class="fab fa-github"></i></a>
+				<a href="https://www.instagram.com/abd.elrahman_maged/"><i class="fab fa-instagram"></i></a>
+				<a href="https://www.facebook.com/cmaged451"><i class="fab fa-facebook-f"></i></a>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- end component: footer -->
 
-        <script src="{{ site.base }}/assets/js/jquery-3.3.1.min.js"></script>
-        <script src="{{ site.base }}/assets/js/lightbox.min.js"></script>
-        <script src="{{ site.base }}/assets/js/app.js"></script>
-    </body>
+<div data-hook="modal" class="modal-wrapper">
+	<div data-hook="modal-content" class="modal-content">
+		<div class="modal-header">
+			<h2>contact me</h2>
+			<i data-hook="modal-close" class="fas fa-times"></i>
+		</div>
+
+		<div class="modal-body">
+			<form data-hook="contact-form">
+
+				<div class="form-group">
+					<h3 class="form-group__title">name</h3>
+					<input type="text" name="name" placeholder="name">
+				</div>
+
+				<div class="form-group">
+					<h3 class="form-group__title">email</h3>
+					<input type="email" id="contact-email" name="email" placeholder="email">
+				</div>
+
+				<div class="form-group">
+					<h3 class="form-group__title">message</h3>
+					<textarea name="message" rows="7" placeholder="message"></textarea>
+				</div>
+
+				<button type="submit">submit</button>
+			</form>
+		</div>
+
+	</div>
+</div>
+
+<script src="{{ site.base }}/assets/js/jquery-3.3.1.min.js"></script>
+<!-- <script src="{{ site.base }}/assets/js/lightbox.min.js"></script> -->
+<script src="{{ site.base }}/assets/js/app.js"></script>
+</body>
+
 </html>

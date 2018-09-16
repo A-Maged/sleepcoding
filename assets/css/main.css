@@ -1727,50 +1727,22 @@ footer {
   bottom: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.5);
-  display: none;
-  opacity: 0;
-  transition: all 0.2s; }
-  .modal-wrapper.show-modal {
-    display: block;
-    opacity: 1; }
+  color: #555; }
   .modal-wrapper .modal-content {
     background-color: #fff;
     max-width: 400px;
-    margin: 40px auto 0;
-    color: #777; }
+    margin: 40px auto 0; }
     .modal-wrapper .modal-content .modal-header {
-      padding: 20px 15px;
-      border-bottom: 1px solid #ccc;
-      color: #fff;
-      background: #555; }
+      padding: 15px;
+      border-bottom: 1px solid #ccc; }
       .modal-wrapper .modal-content .modal-header h2 {
         display: inline-block;
-        text-transform: capitalize;
-        font-weight: normal; }
+        text-transform: capitalize; }
       .modal-wrapper .modal-content .modal-header i {
         float: right;
-        font-size: 20px;
-        margin-top: 7px;
-        cursor: pointer; }
+        font-size: 25px;
+        margin-top: 5px; }
     .modal-wrapper .modal-content .modal-body {
       padding: 15px; }
-      .modal-wrapper .modal-content .modal-body .form-group {
-        width: 100%;
-        margin: 0 0 20px; }
-        .modal-wrapper .modal-content .modal-body .form-group input, .modal-wrapper .modal-content .modal-body .form-group textarea {
-          width: 100%;
-          padding: 10px; }
-        .modal-wrapper .modal-content .modal-body .form-group__title {
-          text-transform: capitalize;
-          margin-bottom: 5px; }
-      .modal-wrapper .modal-content .modal-body button {
-        border: none;
-        padding: 18px 25px;
-        font-size: 19px;
-        text-transform: uppercase;
-        background: #555;
-        color: #fff;
-        transition: all 0.2s; }
-        .modal-wrapper .modal-content .modal-body button:hover {
-          color: #444;
-          background: #eee; }
+
+/*# sourceMappingURL=main.css.map */

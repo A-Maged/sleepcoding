@@ -1,67 +1,50 @@
 'use strict';
 
-
-
-/* Modal */
-// (function(){
-//
-//     var pagesHasModal = ['/', '/sleepcoding-blog/'];
-//     var page = window.location.pathname;
-//     if(!pagesHasModal.includes(page)){
-//         return;
-//     }
-//
-//     var body  = document.getElementsByTagName('body')[0];
-//     var openModalBtns  = document.getElementsByClassName('lightbox-icon');
-//     var closeModalBtn  = document.getElementsByClassName('close-modal')[0];
-//     var modal = document.getElementsByClassName('modal-wrapper')[0];
-//
-//     // register open-buttons event
-//     for(var i = 0; i < openModalBtns.length; i++ ){
-//         openModalBtns[i].addEventListener('click', openModal);
-//     }
-//
-//     closeModalBtn.addEventListener('click', closeModal);
-//
-//     window.addEventListener('click', function(e){
-//         if( e.target == modal){ closeModal(); }
-//     });
-//
-//     function openModal(e)
-//     {
-//         modal.style.display = 'block';
-//         body.style.overflow = 'hidden';
-//
-//         var imageSrc = e.target.parentElement.parentElement.dataset.src;
-//         document.querySelector('.modal-body img').src = imageSrc;
-//     }
-//
-//     function closeModal()
-//     {
-//         modal.style.display = 'none';
-//         body.style.overflow = 'auto';
-//     }
-//
-// })();
-
-
 /* toggle menu */
-(function(){
-    var toggleMenu = document.querySelector('.toggle-menu');
-    var menu = document.querySelector('nav');
+(function() {
+	var toggleMenu = document.querySelector('.toggle-menu');
+	var menu = document.querySelector('nav');
 
+	Array.from(toggleMenu.children).forEach(function(item) {
+		item.addEventListener('click', function() {
+			menu.classList.toggle('show-menu');
+		});
+	});
 
-    Array.from(toggleMenu.children).forEach(function(item){
-        item.addEventListener('click', function(){
-            menu.classList.toggle("show-menu");
-        });
-    })
+	// window.addEventListener('click', function(e){
+	//     if( e.target != toggleMenu && e.target.parentElement != toggleMenu ){
+	//         menu.classList.remove("show-menu");
+	//     }
+	// });
+})();
 
+(function MODAL() {
+	var btns = document.querySelectorAll('a[data-hook="show-hire-modal"]');
+	var modal = document.querySelector('div[data-hook="modal"]');
+	var modalContent = modal.querySelector('div[data-hook="modal-content"]');
+	var closeBtn = modal.querySelector('i[data-hook="modal-close"]');
 
-    // window.addEventListener('click', function(e){
-    //     if( e.target != toggleMenu && e.target.parentElement != toggleMenu ){
-    //         menu.classList.remove("show-menu");
-    //     }
-    // });
+	// register events
+	btns.forEach(function(btn) {
+		btn.addEventListener('click', openModal);
+	});
+	// register events
+	closeBtn.addEventListener('click', closeModal);
 
+	// register events
+	modal.addEventListener('click', function(e) {
+		if (e.target == modal) {
+			closeModal();
+		}
+	});
+
+	function openModal(e) {
+		e.preventDefault();
+		modal.classList.add('show-modal');
+	}
+
+	function closeModal(e) {
+		e.preventDefault();
+		modal.classList.remove('show-modal');
+	}
 })();
