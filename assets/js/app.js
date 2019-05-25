@@ -18,33 +18,33 @@
 	// });
 })();
 
-(function MODAL() {
-	var btns = document.querySelectorAll('a[data-hook="show-hire-modal"]');
-	var modal = document.querySelector('div[data-hook="modal"]');
-	var modalContent = modal.querySelector('div[data-hook="modal-content"]');
-	var closeBtn = modal.querySelector('i[data-hook="modal-close"]');
+// (function MODAL() {
+// 	var btns = document.querySelectorAll('a[data-hook="show-hire-modal"]');
+// 	var modal = document.querySelector('div[data-hook="modal"]');
+// 	var modalContent = modal.querySelector('div[data-hook="modal-content"]');
+// 	var closeBtn = modal.querySelector('i[data-hook="modal-close"]');
 
-	// register events
-	btns.forEach(function(btn) {
-		btn.addEventListener('click', openModal);
-	});
-	// register events
-	closeBtn.addEventListener('click', closeModal);
+// 	// register events
+// 	btns.forEach(function(btn) {
+// 		btn.addEventListener('click', openModal);
+// 	});
+// 	// register events
+// 	closeBtn.addEventListener('click', closeModal);
 
-	// register events
-	modal.addEventListener('click', function(e) {
-		if (e.target == modal) {
-			closeModal();
-		}
-	});
+// 	// register events
+// 	modal.addEventListener('click', function(e) {
+// 		if (e.target == modal) {
+// 			closeModal();
+// 		}
+// 	});
 
-	function openModal(e) {
-		e.preventDefault();
-		modal.classList.add('show-modal');
-	}
+// 	function openModal(e) {
+// 		e.preventDefault();
+// 		modal.classList.add('show-modal');
+// 	}
 
-	function closeModal(e) {
-		e.preventDefault();
-		modal.classList.remove('show-modal');
-	}
-})();
+// 	function closeModal(e) {
+// 		e.preventDefault();
+// 		modal.classList.remove('show-modal');
+// 	}
+// })();

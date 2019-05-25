@@ -14,8 +14,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-# base: https://a-maged.github.io/sleepcoding-blog
-base: http://172.17.0.2:4000
+base: https://a-maged.github.io/sleepcoding-blog
+# base: http://127.0.0.1:4000
 
 minify_html: true
 
@@ -41,7 +41,6 @@ plugins:
   - jekyll-feed
   - jekyll-babel
   # - jekyll-compress-images
-
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
